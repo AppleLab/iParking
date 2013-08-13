@@ -21,6 +21,7 @@
 		C5F7B7CA17B9CC5A00FB6223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7AC17B9CC5A00FB6223 /* UIKit.framework */; };
 		C5F7B7D217B9CC5A00FB6223 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5F7B7D017B9CC5A00FB6223 /* InfoPlist.strings */; };
 		C5F7B7D417B9CC5A00FB6223 /* iParkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B7D317B9CC5A00FB6223 /* iParkingTests.m */; };
+		C5F7B7E317B9D74500FB6223 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B7E217B9D74500FB6223 /* Core.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C5F7B7CF17B9CC5A00FB6223 /* iParkingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iParkingTests-Info.plist"; sourceTree = "<group>"; };
 		C5F7B7D117B9CC5A00FB6223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5F7B7D317B9CC5A00FB6223 /* iParkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iParkingTests.m; sourceTree = "<group>"; };
+		C5F7B7E117B9D74500FB6223 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		C5F7B7E217B9D74500FB6223 /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +115,10 @@
 		C5F7B7AE17B9CC5A00FB6223 /* iParking */ = {
 			isa = PBXGroup;
 			children = (
-				C5F7B7B717B9CC5A00FB6223 /* AppDelegate.h */,
-				C5F7B7B817B9CC5A00FB6223 /* AppDelegate.m */,
-				C5F7B7BA17B9CC5A00FB6223 /* Main.storyboard */,
-				C5F7B7BD17B9CC5A00FB6223 /* ViewController.h */,
-				C5F7B7BE17B9CC5A00FB6223 /* ViewController.m */,
-				C5F7B7C017B9CC5A00FB6223 /* Images.xcassets */,
+				C5F7B7E017B9D57E00FB6223 /* ESI */,
+				C5F7B7DF17B9D57600FB6223 /* DataStore */,
+				C5F7B7DE17B9D56D00FB6223 /* UI */,
+				C5F7B7DD17B9D55F00FB6223 /* Core */,
 				C5F7B7AF17B9CC5A00FB6223 /* Supporting Files */,
 			);
 			path = iParking;
@@ -126,6 +127,9 @@
 		C5F7B7AF17B9CC5A00FB6223 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5F7B7B717B9CC5A00FB6223 /* AppDelegate.h */,
+				C5F7B7B817B9CC5A00FB6223 /* AppDelegate.m */,
+				C5F7B7C017B9CC5A00FB6223 /* Images.xcassets */,
 				C5F7B7B017B9CC5A00FB6223 /* iParking-Info.plist */,
 				C5F7B7B117B9CC5A00FB6223 /* InfoPlist.strings */,
 				C5F7B7B417B9CC5A00FB6223 /* main.m */,
@@ -150,6 +154,39 @@
 				C5F7B7D017B9CC5A00FB6223 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5F7B7DD17B9D55F00FB6223 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C5F7B7E117B9D74500FB6223 /* Core.h */,
+				C5F7B7E217B9D74500FB6223 /* Core.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C5F7B7DE17B9D56D00FB6223 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C5F7B7BA17B9CC5A00FB6223 /* Main.storyboard */,
+				C5F7B7BD17B9CC5A00FB6223 /* ViewController.h */,
+				C5F7B7BE17B9CC5A00FB6223 /* ViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C5F7B7DF17B9D57600FB6223 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataStore;
+			sourceTree = "<group>";
+		};
+		C5F7B7E017B9D57E00FB6223 /* ESI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ESI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +288,7 @@
 			files = (
 				C5F7B7BF17B9CC5A00FB6223 /* ViewController.m in Sources */,
 				C5F7B7B917B9CC5A00FB6223 /* AppDelegate.m in Sources */,
+				C5F7B7E317B9D74500FB6223 /* Core.m in Sources */,
 				C5F7B7B517B9CC5A00FB6223 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +415,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iParking/iParking-Prefix.pch";
 				INFOPLIST_FILE = "iParking/iParking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iParking/iParking-Prefix.pch";
 				INFOPLIST_FILE = "iParking/iParking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
