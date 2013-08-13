@@ -14,8 +14,8 @@ static Core* _core;
 
 -(id) init
 {
-    [[NSError errorWithDomain:@"error" code:0 userInfo:Nil] raise];
-    return nil;
+    self = [super init];
+    return self;
 }
 
 +(Core*) core
@@ -23,7 +23,7 @@ static Core* _core;
     @synchronized(_core)
     {
         if (!_core)
-            _core = [[super alloc] init];
+            _core = [[Core alloc] init];
         return _core;
     }
 }
