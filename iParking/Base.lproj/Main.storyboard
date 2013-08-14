@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <scenes>
-        <!--View Controller - WorldMap-->
+        <!--View Controller - Map-->
         <scene sceneID="slD-HF-v84">
             <objects>
                 <viewController id="mro-Au-hVG" customClass="ViewController" sceneMemberID="viewController">
@@ -31,32 +31,59 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="WorldMap" image="image.gif" id="5Wb-wA-1lo"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="img2012032210034175.jpg" id="5Wb-wA-1lo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfd-m3-Alf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="-734"/>
+            <point key="canvasLocation" x="226" y="-748"/>
         </scene>
-        <!--View Controller - Item-->
-        <scene sceneID="p7a-za-WnO">
+        <!--View Controller-->
+        <scene sceneID="7cE-wp-F7k">
             <objects>
-                <viewController id="zNj-f8-lA4" sceneMemberID="viewController">
+                <viewController id="hdw-2B-W6J" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sW5-F0-dpt"/>
-                        <viewControllerLayoutGuide type="bottom" id="uhe-Ow-dYH"/>
+                        <viewControllerLayoutGuide type="top" id="CMX-95-oRr"/>
+                        <viewControllerLayoutGuide type="bottom" id="XkE-zz-yFi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aUv-pm-M5o">
+                    <view key="view" contentMode="scaleToFill" id="6vr-bu-KeJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2012032210034175.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aAl-0P-VpC">
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Поиск" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um8-KG-qaf">
+                                <rect key="frame" x="172" y="85" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usk-jS-mQJ">
+                                <rect key="frame" x="20" y="44" width="281" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Вкл/Выкл GPS" backgroundImage="JwSvJ_croper_ru.jpeg"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLs-Gc-qhv">
+                                <rect key="frame" x="20" y="82" width="281" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Показать ближайшие парковки" backgroundImage="JwSvJ_croper_ru.jpeg">
+                                    <color key="titleColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="J24-7z-EAa"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="68c-P0-9yS"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9gq-No-0hH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtZ-jq-JJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="-454"/>
+            <point key="canvasLocation" x="846" y="-453"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--View Controller-->
         <scene sceneID="QxK-P7-MsW">
             <objects>
                 <viewController id="PAe-VJ-KBI" sceneMemberID="viewController">
@@ -68,24 +95,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="iParking" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWy-zO-xHQ">
-                                <rect key="frame" x="81" y="281" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Iub-UB-6a4">
-                                <rect key="frame" x="60" y="64" width="248" height="209"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="itw-Um-gKu">
+                                <rect key="frame" x="0.0" y="272" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iParking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-0j-amM">
+                                <rect key="frame" x="116" y="241" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="MZm-Sh-jqE"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="MZm-Sh-jqE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0F-cw-af8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="227"/>
+            <point key="canvasLocation" x="807" y="229"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yCT-Q5-hTd">
@@ -99,17 +131,19 @@
                     </tabBar>
                     <connections>
                         <segue destination="mro-Au-hVG" kind="relationship" relationship="viewControllers" id="s0O-tc-gLH"/>
-                        <segue destination="zNj-f8-lA4" kind="relationship" relationship="viewControllers" id="4Qe-Pa-HrY"/>
+                        <segue destination="hdw-2B-W6J" kind="relationship" relationship="viewControllers" id="V2I-uS-yuE"/>
                         <segue destination="PAe-VJ-KBI" kind="relationship" relationship="viewControllers" id="3z3-Ex-3pm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvU-4B-PEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-344" y="-192"/>
+            <point key="canvasLocation" x="-210" y="-142"/>
         </scene>
     </scenes>
     <resources>
+        <image name="JwSvJ_croper_ru.jpeg" width="193" height="43"/>
         <image name="image.gif" width="400" height="399"/>
+        <image name="img2012032210034175.jpg" width="1200" height="800"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

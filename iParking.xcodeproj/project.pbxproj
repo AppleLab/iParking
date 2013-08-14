@@ -25,6 +25,8 @@
 		CE929A9017BB613B004B87AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE929A8F17BB613B004B87AC /* MapKit.framework */; };
 		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
 		CEE4243017BB818A008A32C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE4242F17BB818A008A32C9 /* CoreLocation.framework */; };
+		CEEAC4EE17BB870D00B8E5E1 /* img2012032210034175.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4ED17BB870D00B8E5E1 /* img2012032210034175.jpg */; };
+		CEEAC4F217BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F117BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		CE929A8F17BB613B004B87AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEBD06D717BA506500E22A12 /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = SOURCE_ROOT; };
 		CEE4242F17BB818A008A32C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CEEAC4ED17BB870D00B8E5E1 /* img2012032210034175.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img2012032210034175.jpg; path = ../../../Downloads/img2012032210034175.jpg; sourceTree = "<group>"; };
+		CEEAC4F117BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = JwSvJ_croper_ru.jpeg; path = ../../../Downloads/JwSvJ_croper_ru.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +147,9 @@
 				C5F7B7B017B9CC5A00FB6223 /* iParking-Info.plist */,
 				CEBD06D717BA506500E22A12 /* image.gif */,
 				C5F7B7B117B9CC5A00FB6223 /* InfoPlist.strings */,
+				CEEAC4F117BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg */,
 				C5F7B7B417B9CC5A00FB6223 /* main.m */,
+				CEEAC4ED17BB870D00B8E5E1 /* img2012032210034175.jpg */,
 				C5F7B7B617B9CC5A00FB6223 /* iParking-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -276,8 +282,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEAC4F217BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */,
 				CEBD06D817BA506500E22A12 /* image.gif in Resources */,
 				C5F7B7C117B9CC5A00FB6223 /* Images.xcassets in Resources */,
+				CEEAC4EE17BB870D00B8E5E1 /* img2012032210034175.jpg in Resources */,
 				C5F7B7B317B9CC5A00FB6223 /* InfoPlist.strings in Resources */,
 				C5F7B7BC17B9CC5A00FB6223 /* Main.storyboard in Resources */,
 			);
