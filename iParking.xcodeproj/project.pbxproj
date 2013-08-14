@@ -22,6 +22,7 @@
 		C5F7B7D217B9CC5A00FB6223 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5F7B7D017B9CC5A00FB6223 /* InfoPlist.strings */; };
 		C5F7B7D417B9CC5A00FB6223 /* iParkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B7D317B9CC5A00FB6223 /* iParkingTests.m */; };
 		C5F7B7E317B9D74500FB6223 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B7E217B9D74500FB6223 /* Core.m */; };
+		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C5F7B7D317B9CC5A00FB6223 /* iParkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iParkingTests.m; sourceTree = "<group>"; };
 		C5F7B7E117B9D74500FB6223 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C5F7B7E217B9D74500FB6223 /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		CEBD06D717BA506500E22A12 /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				C5F7B7B817B9CC5A00FB6223 /* AppDelegate.m */,
 				C5F7B7C017B9CC5A00FB6223 /* Images.xcassets */,
 				C5F7B7B017B9CC5A00FB6223 /* iParking-Info.plist */,
+				CEBD06D717BA506500E22A12 /* image.gif */,
 				C5F7B7B117B9CC5A00FB6223 /* InfoPlist.strings */,
 				C5F7B7B417B9CC5A00FB6223 /* main.m */,
 				C5F7B7B617B9CC5A00FB6223 /* iParking-Prefix.pch */,
@@ -265,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBD06D817BA506500E22A12 /* image.gif in Resources */,
 				C5F7B7C117B9CC5A00FB6223 /* Images.xcassets in Resources */,
 				C5F7B7B317B9CC5A00FB6223 /* InfoPlist.strings in Resources */,
 				C5F7B7BC17B9CC5A00FB6223 /* Main.storyboard in Resources */,
@@ -494,6 +498,7 @@
 				C5F7B7D917B9CC5A00FB6223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5F7B7DA17B9CC5A00FB6223 /* Build configuration list for PBXNativeTarget "iParkingTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +507,7 @@
 				C5F7B7DC17B9CC5A00FB6223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

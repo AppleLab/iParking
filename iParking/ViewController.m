@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[Core core] test];
+    //[[Core core] test];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
