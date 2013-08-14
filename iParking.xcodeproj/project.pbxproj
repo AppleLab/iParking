@@ -25,7 +25,6 @@
 		CE929A9017BB613B004B87AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE929A8F17BB613B004B87AC /* MapKit.framework */; };
 		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
 		CEE4243017BB818A008A32C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE4242F17BB818A008A32C9 /* CoreLocation.framework */; };
-		CEEAC4F617BB991200B8E5E1 /* 13254411332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F517BB991200B8E5E1 /* 13254411332.jpg */; };
 		CEEAC4FA17BB9C1700B8E5E1 /* img2012032210034175.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */; };
 		CEEAC4FC17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */; };
 		CEEAC4FE17BB9C2A00B8E5E1 /* kazan-0045.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */; };
@@ -66,7 +65,6 @@
 		CE929A8F17BB613B004B87AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEBD06D717BA506500E22A12 /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = SOURCE_ROOT; };
 		CEE4242F17BB818A008A32C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		CEEAC4F517BB991200B8E5E1 /* 13254411332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 13254411332.jpg; path = ../../../Downloads/13254411332.jpg; sourceTree = "<group>"; };
 		CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2012032210034175.jpg; sourceTree = SOURCE_ROOT; };
 		CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JwSvJ_croper_ru.jpeg; sourceTree = SOURCE_ROOT; };
 		CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kazan-0045.jpeg"; sourceTree = SOURCE_ROOT; };
@@ -155,7 +153,6 @@
 				CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */,
 				CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */,
 				C5F7B7B417B9CC5A00FB6223 /* main.m */,
-				CEEAC4F517BB991200B8E5E1 /* 13254411332.jpg */,
 				C5F7B7B617B9CC5A00FB6223 /* iParking-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -292,7 +289,6 @@
 				CEBD06D817BA506500E22A12 /* image.gif in Resources */,
 				CEEAC4FC17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */,
 				C5F7B7C117B9CC5A00FB6223 /* Images.xcassets in Resources */,
-				CEEAC4F617BB991200B8E5E1 /* 13254411332.jpg in Resources */,
 				C5F7B7B317B9CC5A00FB6223 /* InfoPlist.strings in Resources */,
 				CEEAC4FA17BB9C1700B8E5E1 /* img2012032210034175.jpg in Resources */,
 				C5F7B7BC17B9CC5A00FB6223 /* Main.storyboard in Resources */,
