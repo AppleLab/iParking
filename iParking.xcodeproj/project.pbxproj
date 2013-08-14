@@ -27,6 +27,8 @@
 		CEE4243017BB818A008A32C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE4242F17BB818A008A32C9 /* CoreLocation.framework */; };
 		CEEAC4EE17BB870D00B8E5E1 /* img2012032210034175.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4ED17BB870D00B8E5E1 /* img2012032210034175.jpg */; };
 		CEEAC4F217BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F117BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg */; };
+		CEEAC4F617BB991200B8E5E1 /* 13254411332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F517BB991200B8E5E1 /* 13254411332.jpg */; };
+		CEEAC4F817BB9A5700B8E5E1 /* kazan-0045.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F717BB9A5700B8E5E1 /* kazan-0045.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		CEE4242F17BB818A008A32C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CEEAC4ED17BB870D00B8E5E1 /* img2012032210034175.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img2012032210034175.jpg; path = ../../../Downloads/img2012032210034175.jpg; sourceTree = "<group>"; };
 		CEEAC4F117BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = JwSvJ_croper_ru.jpeg; path = ../../../Downloads/JwSvJ_croper_ru.jpeg; sourceTree = "<group>"; };
+		CEEAC4F517BB991200B8E5E1 /* 13254411332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 13254411332.jpg; path = ../../../Downloads/13254411332.jpg; sourceTree = "<group>"; };
+		CEEAC4F717BB9A5700B8E5E1 /* kazan-0045.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "kazan-0045.jpeg"; path = "../../../Downloads/kazan-0045.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +152,9 @@
 				CEBD06D717BA506500E22A12 /* image.gif */,
 				C5F7B7B117B9CC5A00FB6223 /* InfoPlist.strings */,
 				CEEAC4F117BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg */,
+				CEEAC4F717BB9A5700B8E5E1 /* kazan-0045.jpeg */,
 				C5F7B7B417B9CC5A00FB6223 /* main.m */,
+				CEEAC4F517BB991200B8E5E1 /* 13254411332.jpg */,
 				CEEAC4ED17BB870D00B8E5E1 /* img2012032210034175.jpg */,
 				C5F7B7B617B9CC5A00FB6223 /* iParking-Prefix.pch */,
 			);
@@ -285,8 +291,10 @@
 				CEEAC4F217BB938200B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */,
 				CEBD06D817BA506500E22A12 /* image.gif in Resources */,
 				C5F7B7C117B9CC5A00FB6223 /* Images.xcassets in Resources */,
+				CEEAC4F617BB991200B8E5E1 /* 13254411332.jpg in Resources */,
 				CEEAC4EE17BB870D00B8E5E1 /* img2012032210034175.jpg in Resources */,
 				C5F7B7B317B9CC5A00FB6223 /* InfoPlist.strings in Resources */,
+				CEEAC4F817BB9A5700B8E5E1 /* kazan-0045.jpeg in Resources */,
 				C5F7B7BC17B9CC5A00FB6223 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
