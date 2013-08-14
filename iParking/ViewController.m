@@ -15,11 +15,30 @@
 
 @implementation ViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+     //Координаты точки на карте
+    CLLocationCoordinate2D location;
+    location.latitude = 0;
+    location.longitude= 0;
+    MKCoordinateSpan span;
+    span.latitudeDelta=0.07;
+    span.longitudeDelta = 0.07;
+    MKCoordinateRegion region;
+    region.center = location;
+    region.span= span;
+    [mkMapView setRegion: region animated:animated];
+    
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     //[[Core core] test];
 	// Do any additional setup after loading the view, typically from a nib.
+    [super viewDidLoad];
+    //mapview
+    mkMapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:mkMapView];
 }
 
 - (void)didReceiveMemoryWarning

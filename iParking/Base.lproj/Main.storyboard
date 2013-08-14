@@ -8,7 +8,7 @@
         <!--View Controller - WorldMap-->
         <scene sceneID="slD-HF-v84">
             <objects>
-                <viewController id="mro-Au-hVG" sceneMemberID="viewController">
+                <viewController id="mro-Au-hVG" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aX-bh-4o9"/>
                         <viewControllerLayoutGuide type="bottom" id="1z2-ll-6nk"/>
