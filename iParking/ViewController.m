@@ -19,8 +19,8 @@
     [super viewWillAppear:animated];
      //Координаты точки на карте
     CLLocationCoordinate2D location;
-    location.latitude = 0;
-    location.longitude= 0;
+    location.latitude = 55.7877000;
+    location.longitude= 49.1248000;
     MKCoordinateSpan span;
     span.latitudeDelta=0.07;
     span.longitudeDelta = 0.07;
