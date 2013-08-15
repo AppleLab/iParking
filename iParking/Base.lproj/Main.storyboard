@@ -28,6 +28,24 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usk-jS-mQJ">
+                                <rect key="frame" x="88" y="457" width="219" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Мое местоположение" backgroundImage="13254411332.jpg">
+                                    <color key="titleColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLs-Gc-qhv">
+                                <rect key="frame" x="88" y="427" width="219" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Путь до ближайшей парковки" backgroundImage="13254411332.jpg">
+                                    <color key="titleColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -36,55 +54,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfd-m3-Alf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="226" y="-748"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="7cE-wp-F7k">
-            <objects>
-                <viewController id="hdw-2B-W6J" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CMX-95-oRr"/>
-                        <viewControllerLayoutGuide type="bottom" id="XkE-zz-yFi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6vr-bu-KeJ">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2012032210034175.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aAl-0P-VpC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Поиск" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um8-KG-qaf">
-                                <rect key="frame" x="172" y="85" width="76" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usk-jS-mQJ">
-                                <rect key="frame" x="19" y="20" width="281" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Мое местоположение" backgroundImage="JwSvJ_croper_ru.jpeg">
-                                    <color key="titleColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLs-Gc-qhv">
-                                <rect key="frame" x="20" y="55" width="280" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Путь до ближайшей парковки" backgroundImage="JwSvJ_croper_ru.jpeg">
-                                    <color key="titleColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="68c-P0-9yS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JtZ-jq-JJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="846" y="-465"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QxK-P7-MsW">
@@ -121,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0F-cw-af8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1859" y="229"/>
+            <point key="canvasLocation" x="1103" y="-537"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dfN-fD-yRg">
@@ -134,13 +103,19 @@
                     <view key="view" contentMode="scaleToFill" id="qvO-D6-JP0">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2012032210034175.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aAl-0P-VpC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="M1f-bK-Ul8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Omo-0K-QFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1758" y="883"/>
+            <point key="canvasLocation" x="1768" y="939"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yCT-Q5-hTd">
@@ -154,7 +129,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="mro-Au-hVG" kind="relationship" relationship="viewControllers" id="s0O-tc-gLH"/>
-                        <segue destination="hdw-2B-W6J" kind="relationship" relationship="viewControllers" id="V2I-uS-yuE"/>
                         <segue destination="PAe-VJ-KBI" kind="relationship" relationship="viewControllers" id="3z3-Ex-3pm"/>
                         <segue destination="6BI-Kh-bQc" kind="relationship" relationship="viewControllers" id="3HY-D1-xrx"/>
                     </connections>
@@ -256,13 +230,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1e-EH-qDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="728" y="396"/>
+            <point key="canvasLocation" x="536" y="156"/>
         </scene>
     </scenes>
     <resources>
         <image name="13254411332.jpg" width="202.47468566894531" height="121.48480987548828"/>
         <image name="440173519_640.jpg" width="640" height="360"/>
-        <image name="JwSvJ_croper_ru.jpeg" width="193" height="43"/>
         <image name="img2012032210034175.jpg" width="1200" height="800"/>
         <image name="kazan-0045.jpeg" width="1716" height="768"/>
     </resources>
