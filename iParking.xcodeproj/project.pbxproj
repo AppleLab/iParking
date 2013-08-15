@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3D78F5617BD44F20050167A /* TakePointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D78F5517BD44F20050167A /* TakePointViewController.m */; };
 		C5F7B7A917B9CC5A00FB6223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7A817B9CC5A00FB6223 /* Foundation.framework */; };
 		C5F7B7AB17B9CC5A00FB6223 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7AA17B9CC5A00FB6223 /* CoreGraphics.framework */; };
 		C5F7B7AD17B9CC5A00FB6223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7AC17B9CC5A00FB6223 /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C3D78F5417BD44F20050167A /* TakePointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePointViewController.h; sourceTree = "<group>"; };
+		C3D78F5517BD44F20050167A /* TakePointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePointViewController.m; sourceTree = "<group>"; };
 		C5F7B7A517B9CC5A00FB6223 /* iParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F7B7A817B9CC5A00FB6223 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5F7B7AA17B9CC5A00FB6223 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -197,6 +200,8 @@
 				C5F7B7BA17B9CC5A00FB6223 /* Main.storyboard */,
 				C5F7B7BD17B9CC5A00FB6223 /* ViewController.h */,
 				C5F7B7BE17B9CC5A00FB6223 /* ViewController.m */,
+				C3D78F5417BD44F20050167A /* TakePointViewController.h */,
+				C3D78F5517BD44F20050167A /* TakePointViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D78F5617BD44F20050167A /* TakePointViewController.m in Sources */,
 				C5F7B7BF17B9CC5A00FB6223 /* ViewController.m in Sources */,
 				C5F7B7B917B9CC5A00FB6223 /* AppDelegate.m in Sources */,
 				C5F7B7E317B9D74500FB6223 /* Core.m in Sources */,

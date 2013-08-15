@@ -17,7 +17,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-     //Координаты точки на карте
+     //Set default location
     CLLocationCoordinate2D location;
     location.latitude = 55.7877000;
     location.longitude= 49.1248000;
@@ -33,7 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[[Core core] test];
+    //
 	// Do any additional setup after loading the view, typically from a nib.
     [super viewDidLoad];
     //mapview
