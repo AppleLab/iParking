@@ -29,6 +29,7 @@
 		CEEAC4FC17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */; };
 		CEEAC4FE17BB9C2A00B8E5E1 /* kazan-0045.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */; };
 		CEF746F817BCDDB800943206 /* 13254411332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF746F717BCDDB800943206 /* 13254411332.jpg */; };
+		CEF746FA17BCDF2A00943206 /* 440173519_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF746F917BCDF2A00943206 /* 440173519_640.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JwSvJ_croper_ru.jpeg; sourceTree = SOURCE_ROOT; };
 		CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kazan-0045.jpeg"; sourceTree = SOURCE_ROOT; };
 		CEF746F717BCDDB800943206 /* 13254411332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13254411332.jpg; sourceTree = SOURCE_ROOT; };
+		CEF746F917BCDF2A00943206 /* 440173519_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 440173519_640.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */,
 				CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */,
 				CEF746F717BCDDB800943206 /* 13254411332.jpg */,
+				CEF746F917BCDF2A00943206 /* 440173519_640.jpg */,
 				C5F7B7B417B9CC5A00FB6223 /* main.m */,
 				C5F7B7B617B9CC5A00FB6223 /* iParking-Prefix.pch */,
 			);
@@ -291,6 +294,7 @@
 				CEEAC4FE17BB9C2A00B8E5E1 /* kazan-0045.jpeg in Resources */,
 				CEBD06D817BA506500E22A12 /* image.gif in Resources */,
 				CEEAC4FC17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */,
+				CEF746FA17BCDF2A00943206 /* 440173519_640.jpg in Resources */,
 				CEF746F817BCDDB800943206 /* 13254411332.jpg in Resources */,
 				C5F7B7C117B9CC5A00FB6223 /* Images.xcassets in Resources */,
 				C5F7B7B317B9CC5A00FB6223 /* InfoPlist.strings in Resources */,
