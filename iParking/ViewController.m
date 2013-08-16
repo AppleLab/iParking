@@ -14,6 +14,8 @@
     
 @implementation ViewController
 
+
+
 @synthesize map;
 - (IBAction)GetMyLocation:(id)sender {
     map.showsUserLocation = YES;
