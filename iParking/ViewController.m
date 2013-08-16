@@ -85,10 +85,6 @@
     [self.view addSubview:segmentedControl];
     
     
-  
-    
-    
-    
     Annotation *annotation2 = [Annotation new];
     annotation2.title = @"Annotation2";
     annotation2.subtitle = @"My annotation example";

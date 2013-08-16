@@ -26,6 +26,8 @@
 		CE0D250817BE4C1A003D1950 /* Копия red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250717BE4C1A003D1950 /* Копия red-square-button-md.png */; };
 		CE0D250A17BE4CF7003D1950 /* iParkinh_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250917BE4CF7003D1950 /* iParkinh_640x960.png */; };
 		CE0D250C17BE4D5F003D1950 /* IPhone_free_desktop_(retina).png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250B17BE4D5F003D1950 /* IPhone_free_desktop_(retina).png */; };
+		CE1B1AA417BE744C00A82EC9 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1AA317BE744C00A82EC9 /* DataStore.m */; };
+		CE1B1AA717BE746A00A82EC9 /* DataStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1AA617BE746900A82EC9 /* DataStoreController.m */; };
 		CE929A9017BB613B004B87AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE929A8F17BB613B004B87AC /* MapKit.framework */; };
 		CEBA743017BE0673006572BB /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA742F17BE0673006572BB /* Annotation.m */; };
 		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
@@ -73,6 +75,10 @@
 		CE0D250717BE4C1A003D1950 /* Копия red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Копия red-square-button-md.png"; sourceTree = SOURCE_ROOT; };
 		CE0D250917BE4CF7003D1950 /* iParkinh_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iParkinh_640x960.png; sourceTree = SOURCE_ROOT; };
 		CE0D250B17BE4D5F003D1950 /* IPhone_free_desktop_(retina).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IPhone_free_desktop_(retina).png"; sourceTree = SOURCE_ROOT; };
+		CE1B1AA217BE744C00A82EC9 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		CE1B1AA317BE744C00A82EC9 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
+		CE1B1AA517BE746900A82EC9 /* DataStoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStoreController.h; sourceTree = "<group>"; };
+		CE1B1AA617BE746900A82EC9 /* DataStoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreController.m; sourceTree = "<group>"; };
 		CE929A8F17BB613B004B87AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEBA742E17BE0673006572BB /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		CEBA742F17BE0673006572BB /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
@@ -202,6 +208,8 @@
 			children = (
 				C5F7B7E117B9D74500FB6223 /* Core.h */,
 				C5F7B7E217B9D74500FB6223 /* Core.m */,
+				CE1B1AA517BE746900A82EC9 /* DataStoreController.h */,
+				CE1B1AA617BE746900A82EC9 /* DataStoreController.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -221,6 +229,8 @@
 		C5F7B7DF17B9D57600FB6223 /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
+				CE1B1AA217BE744C00A82EC9 /* DataStore.h */,
+				CE1B1AA317BE744C00A82EC9 /* DataStore.m */,
 			);
 			name = DataStore;
 			sourceTree = "<group>";
@@ -341,9 +351,11 @@
 			files = (
 				C5F7B7BF17B9CC5A00FB6223 /* ViewController.m in Sources */,
 				CEBA743017BE0673006572BB /* Annotation.m in Sources */,
+				CE1B1AA717BE746A00A82EC9 /* DataStoreController.m in Sources */,
 				C5F7B7B917B9CC5A00FB6223 /* AppDelegate.m in Sources */,
 				C5F7B7E317B9D74500FB6223 /* Core.m in Sources */,
 				C5F7B7B517B9CC5A00FB6223 /* main.m in Sources */,
+				CE1B1AA417BE744C00A82EC9 /* DataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
