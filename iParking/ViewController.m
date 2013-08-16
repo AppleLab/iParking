@@ -6,18 +6,27 @@
 //  Copyright (c) 2013 Ramil Garaev. All rights reserved.
 //
 
+
+
+
+    
 #import "ViewController.h"
-#import "Core.h"
-
-@interface ViewController ()
-
-@end
-
+    
 @implementation ViewController
 
--(void)viewWillAppear:(BOOL)animated{
+@synthesize map;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nil bundle:nil];
+    if (self) {
+        // Initialization code here.
+    }
+    return self;
+}
+
+/*-(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-     //Координаты точки на карте
+    //Координаты точки на карте
     CLLocationCoordinate2D location;
     location.latitude = 55.7877000;
     location.longitude= 49.1248000;
@@ -28,25 +37,85 @@
     region.center = location;
     region.span= span;
     [mkMapView setRegion: region animated:animated];
-    
 }
+ */
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    self.map = nil;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[[Core core] test];
-	// Do any additional setup after loading the view, typically from a nib.
-    [super viewDidLoad];
-    //mapview
-    mkMapView = [[MKMapView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:mkMapView];
+    
+	map.showsUserLocation = YES;
+    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];// слежение заместо положением
+    
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:
+                                            [NSArray arrayWithObjects:
+                                             @"Карта",
+                                             @"Спутник",
+                                             @"Гибрид",
+                                             nil]];
+    [segmentedControl addTarget:self action:@selector(changeMapType:) forControlEvents:UIControlEventValueChanged];
+    segmentedControl.frame = CGRectMake(0.0f, 0.0f, 200.0f, 30.0f);
+    segmentedControl.selectedSegmentIndex = 0;
+    segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
+    
+    [self.view addSubview:segmentedControl];
+    
+    
+    Annotation *annotation = [Annotation new];
+    annotation.title = @"Annotation1";
+    annotation.subtitle = @"My annotation example";
+    annotation.coordinate = CLLocationCoordinate2DMake(48.298674f, 35.395776f);
+    [map addAnnotation:annotation];
+    
+    
+    
+    Annotation *annotation2 = [Annotation new];
+    annotation2.title = @"Annotation2";
+    annotation2.subtitle = @"My annotation example";
+    annotation2.coordinate = CLLocationCoordinate2DMake(47.298674f, 35.395776f);
+    [map addAnnotation:annotation2];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning
+- (void)changeMapType:(UISegmentedControl*)sender {
+    if (sender.selectedSegmentIndex == 0) {
+        map.mapType = MKMapTypeStandard;
+    } else if (sender.selectedSegmentIndex == 1) {
+        map.mapType = MKMapTypeSatellite;
+    } else if (sender.selectedSegmentIndex == 2) {
+        map.mapType = MKMapTypeHybrid;
+    }
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    if (annotation == mapView.userLocation) {
+        return nil;
+    }
     
+    static NSString* annotationIdentifier = @"annotationIdentifier";
+    MKPinAnnotationView* annotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
     
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (!annotationView) {
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
+                                                         reuseIdentifier:nil];
+        if([[annotation title] isEqualToString:@"Annotation1"]) {
+            [annotationView setPinColor:MKPinAnnotationColorRed];
+        } else {
+            [annotationView setPinColor:MKPinAnnotationColorGreen];
+            annotationView.animatesDrop = YES;
+            annotationView.canShowCallout = YES;
+        }
+    }
+    
+    return annotationView;
 }
 
 @end

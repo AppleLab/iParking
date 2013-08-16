@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import <CoreLocation/CoreLocation.h>
+#import "Annotation.h"
 
-@interface ViewController : UIViewController{
+@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation>{
     MKMapView *mkMapView;
 }
 
-
-
+@property (nonatomic, retain) IBOutlet MKMapView *map;
 
 @end
+

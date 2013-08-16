@@ -23,6 +23,7 @@
 		C5F7B7D417B9CC5A00FB6223 /* iParkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B7D317B9CC5A00FB6223 /* iParkingTests.m */; };
 		C5F7B7E317B9D74500FB6223 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7B7E217B9D74500FB6223 /* Core.m */; };
 		CE929A9017BB613B004B87AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE929A8F17BB613B004B87AC /* MapKit.framework */; };
+		CEBA743017BE0673006572BB /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA742F17BE0673006572BB /* Annotation.m */; };
 		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
 		CEE4243017BB818A008A32C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE4242F17BB818A008A32C9 /* CoreLocation.framework */; };
 		CEEAC4FA17BB9C1700B8E5E1 /* img2012032210034175.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */; };
@@ -65,6 +66,8 @@
 		C5F7B7E117B9D74500FB6223 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C5F7B7E217B9D74500FB6223 /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 		CE929A8F17BB613B004B87AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CEBA742E17BE0673006572BB /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		CEBA742F17BE0673006572BB /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		CEBD06D717BA506500E22A12 /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = SOURCE_ROOT; };
 		CEE4242F17BB818A008A32C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2012032210034175.jpg; sourceTree = SOURCE_ROOT; };
@@ -197,6 +200,8 @@
 				C5F7B7BA17B9CC5A00FB6223 /* Main.storyboard */,
 				C5F7B7BD17B9CC5A00FB6223 /* ViewController.h */,
 				C5F7B7BE17B9CC5A00FB6223 /* ViewController.m */,
+				CEBA742E17BE0673006572BB /* Annotation.h */,
+				CEBA742F17BE0673006572BB /* Annotation.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5F7B7BF17B9CC5A00FB6223 /* ViewController.m in Sources */,
+				CEBA743017BE0673006572BB /* Annotation.m in Sources */,
 				C5F7B7B917B9CC5A00FB6223 /* AppDelegate.m in Sources */,
 				C5F7B7E317B9D74500FB6223 /* Core.m in Sources */,
 				C5F7B7B517B9CC5A00FB6223 /* main.m in Sources */,
