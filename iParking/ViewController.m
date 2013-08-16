@@ -64,7 +64,7 @@
                                              @"Гибрид",
                                              nil]];
     [segmentedControl addTarget:self action:@selector(changeMapType:) forControlEvents:UIControlEventValueChanged];
-    segmentedControl.frame = CGRectMake(17.0f, 17.0f, 200.0f, 30.0f);
+    segmentedControl.frame = CGRectMake(45.0f, 50.0f, 200.0f, 30.0f);
     segmentedControl.selectedSegmentIndex = 0;
     segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
     
@@ -88,6 +88,7 @@
    /* mkMapView = [[MKMapView alloc]initWithFrame: self.view.bounds];
     [self.view addSubview:mkMapView];
     */
+    
     
 }
 
