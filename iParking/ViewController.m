@@ -49,6 +49,20 @@
     [super viewDidUnload];
     self.map = nil;
 }
+-(void) viewMyAnnotation{
+    Annotation *annotation = [Annotation new];
+    annotation.title = @"Annotation1";
+    annotation.subtitle = @"My annotation example";
+    annotation.coordinate = CLLocationCoordinate2DMake(48.298674f, 35.395776f);
+    [map addAnnotation:annotation];
+    
+    NSMutableArray *array = [[NSMutableArray alloc]init];
+    [array addObject:annotation];
+    
+    [array objectAtIndex:0];
+    [array count];
+
+}
 
 - (void)viewDidLoad
 {
@@ -71,11 +85,7 @@
     [self.view addSubview:segmentedControl];
     
     
-    Annotation *annotation = [Annotation new];
-    annotation.title = @"Annotation1";
-    annotation.subtitle = @"My annotation example";
-    annotation.coordinate = CLLocationCoordinate2DMake(48.298674f, 35.395776f);
-    [map addAnnotation:annotation];
+  
     
     
     
