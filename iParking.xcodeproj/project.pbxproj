@@ -25,10 +25,10 @@
 		CE0D24F817BE4670003D1950 /* glossy_button_blank_green_square.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D24F717BE4670003D1950 /* glossy_button_blank_green_square.png */; };
 		CE0D24FA17BE4690003D1950 /* any_color_round_square_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D24F917BE4690003D1950 /* any_color_round_square_button.png */; };
 		CE0D24FC17BE4696003D1950 /* 12187850352022194759lnasto_green_square_icon_ln.svg.hi.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D24FB17BE4696003D1950 /* 12187850352022194759lnasto_green_square_icon_ln.svg.hi.png */; };
-		CE0D24FE17BE47A7003D1950 /* Копия red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D24FD17BE47A7003D1950 /* Копия red-square-button-md.png */; };
-		CE0D250017BE47AD003D1950 /* red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D24FF17BE47AD003D1950 /* red-square-button-md.png */; };
 		CE0D250217BE4881003D1950 /* IPhone_free_desktop_(retina).png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250117BE4881003D1950 /* IPhone_free_desktop_(retina).png */; };
 		CE0D250417BE490E003D1950 /* iParkinh_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250317BE490E003D1950 /* iParkinh_640x960.png */; };
+		CE0D250617BE4C14003D1950 /* red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250517BE4C14003D1950 /* red-square-button-md.png */; };
+		CE0D250817BE4C1A003D1950 /* Копия red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250717BE4C1A003D1950 /* Копия red-square-button-md.png */; };
 		CE929A9017BB613B004B87AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE929A8F17BB613B004B87AC /* MapKit.framework */; };
 		CEBA743017BE0673006572BB /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA742F17BE0673006572BB /* Annotation.m */; };
 		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
@@ -75,10 +75,10 @@
 		CE0D24F717BE4670003D1950 /* glossy_button_blank_green_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glossy_button_blank_green_square.png; path = ../../glossy_button_blank_green_square.png; sourceTree = "<group>"; };
 		CE0D24F917BE4690003D1950 /* any_color_round_square_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = any_color_round_square_button.png; path = ../../any_color_round_square_button.png; sourceTree = "<group>"; };
 		CE0D24FB17BE4696003D1950 /* 12187850352022194759lnasto_green_square_icon_ln.svg.hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 12187850352022194759lnasto_green_square_icon_ln.svg.hi.png; path = ../../12187850352022194759lnasto_green_square_icon_ln.svg.hi.png; sourceTree = "<group>"; };
-		CE0D24FD17BE47A7003D1950 /* Копия red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Копия red-square-button-md.png"; path = "../../Копия red-square-button-md.png"; sourceTree = "<group>"; };
-		CE0D24FF17BE47AD003D1950 /* red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red-square-button-md.png"; path = "../../red-square-button-md.png"; sourceTree = "<group>"; };
 		CE0D250117BE4881003D1950 /* IPhone_free_desktop_(retina).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IPhone_free_desktop_(retina).png"; path = "../../../Downloads/IPhone_free_desktop_(retina).png"; sourceTree = "<group>"; };
 		CE0D250317BE490E003D1950 /* iParkinh_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iParkinh_640x960.png; path = ../../../Downloads/iParkinh_640x960.png; sourceTree = "<group>"; };
+		CE0D250517BE4C14003D1950 /* red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-square-button-md.png"; sourceTree = SOURCE_ROOT; };
+		CE0D250717BE4C1A003D1950 /* Копия red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Копия red-square-button-md.png"; sourceTree = SOURCE_ROOT; };
 		CE929A8F17BB613B004B87AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEBA742E17BE0673006572BB /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		CEBA742F17BE0673006572BB /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
@@ -174,11 +174,11 @@
 				CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */,
 				CE0D24F917BE4690003D1950 /* any_color_round_square_button.png */,
 				CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */,
+				CE0D250717BE4C1A003D1950 /* Копия red-square-button-md.png */,
 				CE0D250117BE4881003D1950 /* IPhone_free_desktop_(retina).png */,
 				CE0D24FB17BE4696003D1950 /* 12187850352022194759lnasto_green_square_icon_ln.svg.hi.png */,
+				CE0D250517BE4C14003D1950 /* red-square-button-md.png */,
 				CE0D250317BE490E003D1950 /* iParkinh_640x960.png */,
-				CE0D24FF17BE47AD003D1950 /* red-square-button-md.png */,
-				CE0D24FD17BE47A7003D1950 /* Копия red-square-button-md.png */,
 				CE0D24F717BE4670003D1950 /* glossy_button_blank_green_square.png */,
 				CEF746F717BCDDB800943206 /* 13254411332.jpg */,
 				CEF746F917BCDF2A00943206 /* 440173519_640.jpg */,
@@ -321,6 +321,7 @@
 				CEBD06D817BA506500E22A12 /* image.gif in Resources */,
 				CEEAC4FC17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */,
 				CEF746FA17BCDF2A00943206 /* 440173519_640.jpg in Resources */,
+				CE0D250617BE4C14003D1950 /* red-square-button-md.png in Resources */,
 				CE0D24F817BE4670003D1950 /* glossy_button_blank_green_square.png in Resources */,
 				CEF746F817BCDDB800943206 /* 13254411332.jpg in Resources */,
 				C5F7B7C117B9CC5A00FB6223 /* Images.xcassets in Resources */,
@@ -328,11 +329,10 @@
 				CEEAC4FA17BB9C1700B8E5E1 /* img2012032210034175.jpg in Resources */,
 				CE0D24FC17BE4696003D1950 /* 12187850352022194759lnasto_green_square_icon_ln.svg.hi.png in Resources */,
 				CE0D250217BE4881003D1950 /* IPhone_free_desktop_(retina).png in Resources */,
-				CE0D24FE17BE47A7003D1950 /* Копия red-square-button-md.png in Resources */,
-				CE0D250017BE47AD003D1950 /* red-square-button-md.png in Resources */,
 				CE0D250417BE490E003D1950 /* iParkinh_640x960.png in Resources */,
 				CE0D24FA17BE4690003D1950 /* any_color_round_square_button.png in Resources */,
 				C5F7B7BC17B9CC5A00FB6223 /* Main.storyboard in Resources */,
+				CE0D250817BE4C1A003D1950 /* Копия red-square-button-md.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
