@@ -85,6 +85,42 @@
     annotation2.coordinate = CLLocationCoordinate2DMake(47.298674f, 35.395776f);
     [map addAnnotation:annotation2];
     
+    Annotation *annotationA1 = [Annotation new];
+    annotationA1.title = @"ТЦ «Сувар Плаза»";
+    annotationA1.subtitle = @"ул.Спартаковская, 6";
+    annotationA1.coordinate = CLLocationCoordinate2DMake(55.779215877174096, 49.129743576049805);
+    [map addAnnotation:annotationA1];
+    
+    Annotation *annotationA2 = [Annotation new];
+    annotationA2.title = @"Гипермаркет «Кольцо» ";
+    annotationA2.subtitle = @"ул.Петербургская, 1";
+    annotationA2.coordinate = CLLocationCoordinate2DMake(55.786455667264896, 49.12436842918396);
+    [map addAnnotation:annotationA2];
+    
+    Annotation *annotationA3 = [Annotation new];
+    annotationA3.title = @"ТРК «Корстон-Казань»";
+    annotationA3.subtitle = @"ул.Н.Ершова, 1а";
+    annotationA3.coordinate = CLLocationCoordinate2DMake(55.793808710087056, 49.14950609207153);
+    [map addAnnotation:annotationA3];
+    
+    Annotation *annotationA4 = [Annotation new];
+    annotationA4.title = @"ТД «Муравейник»";
+    annotationA4.subtitle = @"ул.Тукая, 2";
+    annotationA4.coordinate = CLLocationCoordinate2DMake(55.78502893173571,  49.10768508911133);
+    [map addAnnotation:annotationA4];
+    
+    Annotation *annotationA5 = [Annotation new];
+    annotationA5.title = @"ТЦ «Модная семья»";
+    annotationA5.subtitle = @"ул.Б.Шахиди, 17";
+    annotationA5.coordinate = CLLocationCoordinate2DMake(55.78679047500998 , 49.106547832489014);
+    [map addAnnotation:annotationA5];
+    
+    Annotation *annotationA6 = [Annotation new];
+    annotationA6.title = @"гипермаркет «ГУМ»»";
+    annotationA6.subtitle = @"ул.Баумана, 51";
+    annotationA6.coordinate = CLLocationCoordinate2DMake(55.787755670422854 , 49.12135362625122);
+    [map addAnnotation:annotationA6];
+    
    /* mkMapView = [[MKMapView alloc]initWithFrame: self.view.bounds];
     [self.view addSubview:mkMapView];
     */
