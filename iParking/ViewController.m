@@ -15,6 +15,10 @@
 @implementation ViewController
 
 @synthesize map;
+- (IBAction)GetMyLocation:(id)sender {
+    map.showsUserLocation = YES;
+    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nil bundle:nil];
@@ -38,7 +42,7 @@
     region.span= span;
     [mkMapView setRegion: region animated:animated];
 }
- */
+*/
 
 - (void)viewDidUnload
 {
@@ -60,7 +64,7 @@
                                              @"Гибрид",
                                              nil]];
     [segmentedControl addTarget:self action:@selector(changeMapType:) forControlEvents:UIControlEventValueChanged];
-    segmentedControl.frame = CGRectMake(0.0f, 0.0f, 200.0f, 30.0f);
+    segmentedControl.frame = CGRectMake(17.0f, 17.0f, 200.0f, 30.0f);
     segmentedControl.selectedSegmentIndex = 0;
     segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
     
@@ -81,6 +85,9 @@
     annotation2.coordinate = CLLocationCoordinate2DMake(47.298674f, 35.395776f);
     [map addAnnotation:annotation2];
     
+   /* mkMapView = [[MKMapView alloc]initWithFrame: self.view.bounds];
+    [self.view addSubview:mkMapView];
+    */
     
 }
 
