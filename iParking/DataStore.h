@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Annotation.h"
 
-@interface DataStore : NSObject
+@interface DataStore : NSObject{
+    
+}
++(BOOL) AddAnnotation:(Annotation*)annotation;
++(Annotation*) GetAnnotation:(int)count;
++(NSMutableArray*) GetArrayAnnotation;
+//lol private method
++(void) Start;
 
 @end

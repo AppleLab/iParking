@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Annotation.h"
+#import "DataStore.h"
 
-@interface DataStoreController : NSObject
+@interface DataStoreController : NSObject{
+}
++(BOOL) AddAnnotation:(NSString*)title andSubtitle: (NSString*)subtitle andlongitude: (double)longitude andlatitude: (double)latitude;
++(Annotation*) GetAnnotation:(int)count;
++(NSMutableArray*) GetArrayAnnotation;
 
 @end

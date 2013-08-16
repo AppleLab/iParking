@@ -11,10 +11,12 @@
 
     
 #import "ViewController.h"
+
     
 @implementation ViewController
 
 @synthesize map;
+
 - (IBAction)GetMyLocation:(id)sender {
     map.showsUserLocation = YES;
     [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
@@ -49,19 +51,13 @@
     [super viewDidUnload];
     self.map = nil;
 }
--(void) viewMyAnnotation{
-    Annotation *annotation = [Annotation new];
-    annotation.title = @"Annotation1";
-    annotation.subtitle = @"My annotation example";
-    annotation.coordinate = CLLocationCoordinate2DMake(48.298674f, 35.395776f);
-    [map addAnnotation:annotation];
-    
-    NSMutableArray *array = [[NSMutableArray alloc]init];
-    [array addObject:annotation];
-    
-    [array objectAtIndex:0];
-    [array count];
 
+// it work?
+-(void) MapToAnnotation{
+    NSMutableArray *array = [DataStoreController GetArrayAnnotation];
+    for (int i = 0; i<[array count]; i++) {
+        [map addAnnotation:[array objectAtIndex:i]];
+    }
 }
 
 - (void)viewDidLoad
@@ -83,9 +79,9 @@
     segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
     
     [self.view addSubview:segmentedControl];
+    [self MapToAnnotation];
     
-    
-    Annotation *annotation2 = [Annotation new];
+   /* Annotation *annotation2 = [Annotation new];
     annotation2.title = @"Annotation2";
     annotation2.subtitle = @"My annotation example";
     annotation2.coordinate = CLLocationCoordinate2DMake(47.298674f, 35.395776f);
@@ -169,7 +165,7 @@
     annotationK7.subtitle = @"Ул.Сибирский тракт, 34";
     annotationK7.coordinate = CLLocationCoordinate2DMake(55.81788488144342, 49.18278694152832);
     [map addAnnotation:annotationK7];
-    
+    */
     
    /* mkMapView = [[MKMapView alloc]initWithFrame: self.view.bounds];
     [self.view addSubview:mkMapView];
