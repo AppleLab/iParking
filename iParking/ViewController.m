@@ -14,14 +14,10 @@
     
 @implementation ViewController
 
-
 @synthesize map;
 - (IBAction)GetMyLocation:(id)sender {
-    
     map.showsUserLocation = YES;
     [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
-
-
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
