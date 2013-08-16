@@ -78,7 +78,7 @@ static bool check=TRUE;
     annotationK3.title = @"ТК «ДОМО»";
     annotationK3.subtitle = @"Ул.Декабристов, 113";
     annotationK3.coordinate = CLLocationCoordinate2DMake(55.821670111900005, 49.08721446990967);
-    //дальше не делал лень
+
     
     Annotation *annotationA4 = [Annotation new];
     annotationA4.title = @"ТД «Муравейник»";

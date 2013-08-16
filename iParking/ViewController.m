@@ -52,7 +52,7 @@
     self.map = nil;
 }
 
-// it work?
+// view annoation at map
 -(void) MapToAnnotation{
     NSMutableArray *array = [DataStoreController GetArrayAnnotation];
     for (int i = 0; i<[array count]; i++) {
@@ -79,6 +79,7 @@
     segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
     
     [self.view addSubview:segmentedControl];
+
     [self MapToAnnotation];
     
    /* Annotation *annotation2 = [Annotation new];
