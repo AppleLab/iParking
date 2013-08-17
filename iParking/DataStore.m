@@ -78,49 +78,50 @@ static bool check=TRUE;
     annotationK3.title = @"ТК «ДОМО»";
     annotationK3.subtitle = @"Ул.Декабристов, 113";
     annotationK3.coordinate = CLLocationCoordinate2DMake(55.821670111900005, 49.08721446990967);
-
+    [array addObject:annotationK3];
     
     Annotation *annotationA4 = [Annotation new];
     annotationA4.title = @"ТД «Муравейник»";
     annotationA4.subtitle = @"ул.Тукая, 2";
     annotationA4.coordinate = CLLocationCoordinate2DMake(55.78502893173571,  49.10768508911133);
-
+    [array addObject:annotationA4];
     
     Annotation *annotationK4 = [Annotation new];
     annotationK4.title = @"Бизнес центр";
     annotationK4.subtitle = @"Ул.Проточная, 8";
     annotationK4.coordinate = CLLocationCoordinate2DMake(55.81337587801879, 49.08612012863159);
-
+    [array addObject:annotationK4];
     
     Annotation *annotationA5 = [Annotation new];
     annotationA5.title = @"ТЦ «Модная семья»";
     annotationA5.subtitle = @"ул.Б.Шахиди, 17";
     annotationA5.coordinate = CLLocationCoordinate2DMake(55.78679047500998 , 49.106547832489014);
-
+    [array addObject:annotationA5];
     
     //нужно проверить адрес
     Annotation *annotationK5 = [Annotation new];
     annotationK5.title = @"Бизнес центр «Союз»";
     annotationK5.subtitle = @"Ул.Васильченко, 1";
     annotationK5.coordinate = CLLocationCoordinate2DMake(55.83861851453064, 49.04439568519592);
-
+    [array addObject:annotationK5];
     
     Annotation *annotationA6 = [Annotation new];
     annotationA6.title = @"гипермаркет «ГУМ»»";
     annotationA6.subtitle = @"ул.Баумана, 51";
     annotationA6.coordinate = CLLocationCoordinate2DMake(55.787755670422854 , 49.12135362625122);
-
+    [array addObject:annotationA6];
     
     Annotation *annotationK6 = [Annotation new];
     annotationK6.title = @"Бизнес центр»";
     annotationK6.subtitle = @"Пр.Ибрагимова, 58";
     annotationK6.coordinate = CLLocationCoordinate2DMake(55.820100009246715, 49.09582167863846);
-
+    [array addObject:annotationK6];
     
     Annotation *annotationK7 = [Annotation new];
     annotationK7.title = @"ТК «Мега Мебель»»";
     annotationK7.subtitle = @"Ул.Сибирский тракт, 34";
     annotationK7.coordinate = CLLocationCoordinate2DMake(55.81788488144342, 49.18278694152832);
+    [array addObject:annotationK7];
 //кал
 }
 @end
