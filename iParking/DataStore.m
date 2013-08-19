@@ -43,7 +43,7 @@ static bool check=TRUE;
     check=FALSE;
     array = [[NSMutableArray alloc]init];
  
-   //кал
+
     Annotation *annotation1 = [Annotation new];
     annotation1.title = @"ТЦ «Сувар Плаза»";
     annotation1.subtitle = @"ул.Спартаковская, 6";
@@ -122,6 +122,6 @@ static bool check=TRUE;
     annotationK7.subtitle = @"Ул.Сибирский тракт, 34";
     annotationK7.coordinate = CLLocationCoordinate2DMake(55.81788488144342, 49.18278694152832);
     [array addObject:annotationK7];
-//кал
+
 }
 @end
