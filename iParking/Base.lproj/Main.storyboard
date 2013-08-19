@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Map-->
+        <!--View Controller-->
         <scene sceneID="slD-HF-v84">
             <objects>
                 <viewController id="mro-Au-hVG" customClass="ViewController" sceneMemberID="viewController">
@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1z2-ll-6nk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UV4-7E-0s4">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Казань" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgO-57-xMp">
@@ -45,10 +45,29 @@
                                     <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8X-GP-grK">
+                                <rect key="frame" x="125" y="392" width="70" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Drop Pin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d79-2v-tf9" kind="push" id="S0Q-bQ-aXr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bl-fo-D2x">
+                                <rect key="frame" x="294" y="122" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <connections>
+                                    <segue destination="wuQ-Hd-pJO" kind="push" id="EMr-oX-Nn8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="13254411332.jpg" id="5Wb-wA-1lo"/>
+                    <navigationItem key="navigationItem" id="uCY-Pa-lvu"/>
                     <connections>
                         <outlet property="blabla" destination="PLs-Gc-qhv" id="Qee-cp-G43"/>
                     </connections>
@@ -78,13 +97,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iParking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2l-0j-amM">
-                                <rect key="frame" x="114" y="438" width="92" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -92,7 +104,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0F-cw-af8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="-537"/>
+            <point key="canvasLocation" x="1573" y="-805"/>
+        </scene>
+        <!--View Controller - Edit Pin-->
+        <scene sceneID="XaK-FX-yoE">
+            <objects>
+                <viewController id="wuQ-Hd-pJO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pc2-IS-2h1"/>
+                        <viewControllerLayoutGuide type="bottom" id="e88-TW-ncj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lfe-i7-uZY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pin Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpB-ct-i67">
+                                <rect key="frame" x="7" y="99" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqi-FG-NlD">
+                                <rect key="frame" x="40" y="183" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMo-V7-b1c">
+                                <rect key="frame" x="20" y="128" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nq-R9-7ME">
+                                <rect key="frame" x="79" y="335" width="157" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Get Directions">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-mJ-dKP">
+                                <rect key="frame" x="79" y="392" width="157" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Delete Pin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Pin" id="Xzv-9E-gPC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mr-Ro-8La" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="-1367"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dfN-fD-yRg">
@@ -130,7 +200,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="mro-Au-hVG" kind="relationship" relationship="viewControllers" id="s0O-tc-gLH"/>
+                        <segue destination="oaf-Oa-9jq" kind="relationship" relationship="viewControllers" id="s0O-tc-gLH"/>
                         <segue destination="PAe-VJ-KBI" kind="relationship" relationship="viewControllers" id="3z3-Ex-3pm"/>
                         <segue destination="6BI-Kh-bQc" kind="relationship" relationship="viewControllers" id="3HY-D1-xrx"/>
                     </connections>
@@ -156,10 +226,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKC-tv-ffG">
-                                <rect key="frame" x="20" y="86" width="280" height="25"/>
+                                <rect key="frame" x="20" y="81" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Информация о приложении" backgroundImage="13254411332.jpg">
+                                <state key="normal" title="Информация о приложении" backgroundImage="any_color_round_square_button.png">
                                     <color key="titleColor" red="0.9960784912109375" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -168,10 +238,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xQ-wo-fK8">
-                                <rect key="frame" x="20" y="124" width="280" height="25"/>
+                                <rect key="frame" x="20" y="113" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Отзывы и комментарии" backgroundImage="13254411332.jpg">
+                                <state key="normal" title="Отзывы и комментарии" backgroundImage="any_color_round_square_button.png">
                                     <color key="titleColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
@@ -187,6 +257,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLt-8V-sAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1258" y="372"/>
+        </scene>
+        <!--Table View Controller - Map Annotions-->
+        <scene sceneID="meI-KR-dtn">
+            <objects>
+                <tableViewController id="d79-2v-tf9" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="b4y-dc-J0T">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="JV3-uy-cv6">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="JV3-uy-cv6" id="zCM-Jk-zg7">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d79-2v-tf9" id="dnG-S2-znN"/>
+                            <outlet property="delegate" destination="d79-2v-tf9" id="4mP-TC-8rq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Map Annotions" id="lgT-P9-oK7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNt-C2-Zvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="-44"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="atA-9k-0R3">
@@ -227,17 +326,37 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="aNP-ny-Ew4" kind="relationship" relationship="rootViewController" id="lKg-py-b6s"/>
+                        <segue destination="aNP-ny-Ew4" kind="relationship" relationship="rootViewController" id="jLR-1W-OaQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1e-EH-qDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="536" y="156"/>
         </scene>
+        <!--Navigation Controller - Map-->
+        <scene sceneID="eRh-gn-wHx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oaf-Oa-9jq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="13254411332.jpg" id="5Wb-wA-1lo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I09-vu-AFl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mro-Au-hVG" kind="relationship" relationship="rootViewController" id="f2A-4p-uE6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AA7-Hu-fZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="-754"/>
+        </scene>
     </scenes>
     <resources>
         <image name="13254411332.jpg" width="202.47468566894531" height="121.48480987548828"/>
         <image name="IPhone_free_desktop_(retina).png" width="640" height="960"/>
+        <image name="any_color_round_square_button.png" width="800" height="800"/>
         <image name="img2012032210034175.jpg" width="1200" height="800"/>
         <image name="kazan-0045.jpeg" width="1716" height="768"/>
         <image name="red-square-button-md.png" width="219.75785827636719" height="219.75785827636719"/>
