@@ -52,17 +52,11 @@
                                 <state key="normal" title="Drop Pin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="d79-2v-tf9" kind="push" id="S0Q-bQ-aXr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bl-fo-D2x">
                                 <rect key="frame" x="294" y="122" width="18" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <connections>
-                                    <segue destination="wuQ-Hd-pJO" kind="push" id="EMr-oX-Nn8"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -74,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfd-m3-Alf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="412" y="-880"/>
+            <point key="canvasLocation" x="400" y="-896"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QxK-P7-MsW">
@@ -104,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0F-cw-af8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1573" y="-805"/>
+            <point key="canvasLocation" x="17" y="-205"/>
         </scene>
         <!--View Controller - Edit Pin-->
         <scene sceneID="XaK-FX-yoE">
@@ -115,7 +109,7 @@
                         <viewControllerLayoutGuide type="bottom" id="e88-TW-ncj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Lfe-i7-uZY">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pin Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpB-ct-i67">
@@ -162,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mr-Ro-8La" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1163" y="-1367"/>
+            <point key="canvasLocation" x="1143" y="-1215"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dfN-fD-yRg">
@@ -173,11 +167,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Nrg-nF-shZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qvO-D6-JP0">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2012032210034175.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aAl-0P-VpC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -202,12 +196,11 @@
                     <connections>
                         <segue destination="oaf-Oa-9jq" kind="relationship" relationship="viewControllers" id="s0O-tc-gLH"/>
                         <segue destination="PAe-VJ-KBI" kind="relationship" relationship="viewControllers" id="3z3-Ex-3pm"/>
-                        <segue destination="6BI-Kh-bQc" kind="relationship" relationship="viewControllers" id="3HY-D1-xrx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jvU-4B-PEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210" y="-142"/>
+            <point key="canvasLocation" x="-606" y="-314"/>
         </scene>
         <!--View Controller - Information-->
         <scene sceneID="CTI-DI-JgN">
@@ -218,11 +211,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Wln-xg-yMJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="16x-vl-5kG">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.64999999999999969" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kazan-0045.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="UlA-BT-7FI">
-                                <rect key="frame" x="-187" y="-41" width="826" height="496"/>
+                                <rect key="frame" x="-187" y="-41" width="826" height="545"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKC-tv-ffG">
@@ -258,35 +251,6 @@
             </objects>
             <point key="canvasLocation" x="1258" y="372"/>
         </scene>
-        <!--Table View Controller - Map Annotions-->
-        <scene sceneID="meI-KR-dtn">
-            <objects>
-                <tableViewController id="d79-2v-tf9" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="b4y-dc-J0T">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="JV3-uy-cv6">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="JV3-uy-cv6" id="zCM-Jk-zg7">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="d79-2v-tf9" id="dnG-S2-znN"/>
-                            <outlet property="delegate" destination="d79-2v-tf9" id="4mP-TC-8rq"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Map Annotions" id="lgT-P9-oK7"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aNt-C2-Zvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1693" y="-44"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="atA-9k-0R3">
             <objects>
@@ -296,7 +260,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JSu-eI-IkS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FD3-RJ-BCM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjj-zA-8dl">
@@ -312,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZt-YP-RbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="791"/>
+            <point key="canvasLocation" x="741" y="907"/>
         </scene>
         <!--Navigation Controller - Information-->
         <scene sceneID="isc-N8-n7B">
@@ -331,7 +295,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1e-EH-qDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="156"/>
+            <point key="canvasLocation" x="532" y="92"/>
         </scene>
         <!--Navigation Controller - Map-->
         <scene sceneID="eRh-gn-wHx">
@@ -350,7 +314,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AA7-Hu-fZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="224" y="-754"/>
+            <point key="canvasLocation" x="-68" y="-896"/>
         </scene>
     </scenes>
     <resources>

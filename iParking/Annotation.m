@@ -37,7 +37,10 @@
 
 - (void)setCoordinate:(CLLocationCoordinate2D)newCoordinate
 {
+    NSLog(@"HASDKHASKJHD");
     self.coordinate = newCoordinate;
+    NSLog(@"ZZZZHSAHDIAUHD");
+
 }
 
 - (MKMapItem*)mapItem {
