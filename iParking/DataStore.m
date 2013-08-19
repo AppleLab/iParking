@@ -43,7 +43,7 @@ static bool check=TRUE;
     check=FALSE;
     array = [[NSMutableArray alloc]init];
  
-   //кал
+
     Annotation *annotation1 = [Annotation new];
     annotation1.title = @"ТЦ «Сувар Плаза»";
     annotation1.subtitle = @"ул.Спартаковская, 6";
@@ -105,7 +105,7 @@ static bool check=TRUE;
     [array addObject:annotationK5];
     
     Annotation *annotationA6 = [Annotation new];
-    annotationA6.title = @"гипермаркет «ГУМ»»";
+    annotationA6.title = @"гипермаркет «ГУМ»";
     annotationA6.subtitle = @"ул.Баумана, 51";
     annotationA6.coordinate = CLLocationCoordinate2DMake(55.787755670422854 , 49.12135362625122);
     [array addObject:annotationA6];
@@ -115,6 +115,12 @@ static bool check=TRUE;
     annotationK6.subtitle = @"Пр.Ибрагимова, 58";
     annotationK6.coordinate = CLLocationCoordinate2DMake(55.820100009246715, 49.09582167863846);
     [array addObject:annotationK6];
+    
+    Annotation *annotationA7 = [Annotation new];
+    annotationA7.title = @"ТД «Казанский ЦУМ»";
+    annotationA7.subtitle = @"ул.Московская, 2";
+    annotationA7.coordinate = CLLocationCoordinate2DMake(55.79268081087669 , 49.10184860229492);
+    [array addObject:annotationA7];
     
     Annotation *annotationK7 = [Annotation new];
     annotationK7.title = @"ТК «Мега Мебель»»";
