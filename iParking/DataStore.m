@@ -43,7 +43,7 @@ static bool check=TRUE;
     check=FALSE;
     array = [[NSMutableArray alloc]init];
  
-   //кал
+
     Annotation *annotation1 = [Annotation new];
     annotation1.title = @"ТЦ «Сувар Плаза»";
     annotation1.subtitle = @"ул.Спартаковская, 6";
