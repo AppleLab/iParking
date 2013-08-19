@@ -98,11 +98,10 @@ static bool check=TRUE;
     annotationA5.coordinate = CLLocationCoordinate2DMake(55.78679047500998 , 49.106547832489014);
     [array addObject:annotationA5];
     
-    //нужно проверить адрес
     Annotation *annotationK5 = [Annotation new];
     annotationK5.title = @"Бизнес центр «Союз»";
     annotationK5.subtitle = @"Ул.Васильченко, 1";
-    annotationK5.coordinate = CLLocationCoordinate2DMake(55.83861851453064, 49.04439568519592);
+    annotationK5.coordinate = CLLocationCoordinate2DMake(55.835811, 49.058516);
     [array addObject:annotationK5];
     
     Annotation *annotationA6 = [Annotation new];
@@ -122,6 +121,135 @@ static bool check=TRUE;
     annotationK7.subtitle = @"Ул.Сибирский тракт, 34";
     annotationK7.coordinate = CLLocationCoordinate2DMake(55.81788488144342, 49.18278694152832);
     [array addObject:annotationK7];
+    
+    Annotation *annotationK8 = [Annotation new];
+    annotationK8.title = @"РК «Ривьера»";
+    annotationK8.subtitle = @"Пр.Амирхана, 1а";
+    annotationK8.coordinate = CLLocationCoordinate2DMake(55.815377264876545, 49.130001068115234);
+    [array addObject:annotationK8];
+    
+    Annotation *annotationK9 = [Annotation new];
+    annotationK9.title = @"РК «Ривьера»";
+    annotationK9.subtitle = @"Пр.Амирхана, 1б";
+    annotationK9.coordinate = CLLocationCoordinate2DMake(55.81573895031542, 49.127211570739746);
+    [array addObject:annotationK9];
+    
+    Annotation *annotationK10 = [Annotation new];
+    annotationK10.title = @"ТК «Новинка»";
+    annotationK10.subtitle = @"Ул.Короленко, 28";
+    annotationK10.coordinate = CLLocationCoordinate2DMake(55.829926422790344, 49.10264253616333);
+    [array addObject:annotationK10];
+    
+    Annotation *annotationK11 = [Annotation new];
+    annotationK11.title = @"Ново-Савиновский рынок";
+    annotationK11.subtitle = @"Ул.Адоратского, 21";
+    annotationK11.coordinate = CLLocationCoordinate2DMake(55.83013130165304, 49.14540767669678);
+    [array addObject:annotationK11];
+    
+    Annotation *annotationK12 = [Annotation new];
+    annotationK12.title = @"Оптовый рынок «Привоз»";
+    annotationK12.subtitle = @"Ул.Адоратского, 65";
+    annotationK12.coordinate = CLLocationCoordinate2DMake(55.843831632321645, 49.144935607910156);
+    [array addObject:annotationK12];
+    
+    Annotation *annotationK13 = [Annotation new];
+    annotationK13.title = @"Розничный рынок «Стан»";
+    annotationK13.subtitle = @"Пр.Амирхана, 48";
+    annotationK13.coordinate = CLLocationCoordinate2DMake(55.83133531977923, 49.133590534329414);
+    [array addObject:annotationK13];
+    
+    Annotation *annotationK14 = [Annotation new];
+    annotationK14.title = @"Розничный рынок «Караваево»";
+    annotationK14.subtitle = @"Ул.Дементьева, 72";
+    annotationK14.coordinate = CLLocationCoordinate2DMake(55.86188050048004, 49.10846829414368);
+    [array addObject:annotationK14];
+    
+    Annotation *annotationK15 = [Annotation new];
+    annotationK15.title = @"ТРК «Парк Хаус»";
+    annotationK15.subtitle = @"пр.Ямашева, 46";
+    annotationK15.coordinate = CLLocationCoordinate2DMake(55.829468454371394, 49.11807060241699);
+    [array addObject:annotationK15];
+    
+    Annotation *annotationK16 = [Annotation new];
+    annotationK16.title = @"ТК «Бэхетле»";
+    annotationK16.subtitle = @"пр.Ямашева, 71а";
+    annotationK16.coordinate = CLLocationCoordinate2DMake(55.82622636583872, 49.13536548614502);
+    [array addObject:annotationK16];
+    
+    Annotation *annotationK17 = [Annotation new];
+    annotationK17.title = @"Центральный стадион";
+    annotationK17.subtitle = @"Ул.Ташаяк, 2а";
+    annotationK17.coordinate = CLLocationCoordinate2DMake(55.796866539878586, 49.0989089012146);
+    [array addObject:annotationK17];
+    
+    Annotation *annotationK18 = [Annotation new];
+    annotationK18.title = @"Чеховский рынок";
+    annotationK18.subtitle = @"Ул.Ташаяк, 2а";
+    annotationK18.coordinate = CLLocationCoordinate2DMake(55.789574395541194, 49.14776802062988);
+    [array addObject:annotationK18];
+    
+    Annotation *annotationK19 = [Annotation new];
+    annotationK19.title = @"Двор дома №56 по ул.Баумана, въезд с ул.Островского";
+    annotationK19.subtitle = @"Ул.Баумана, 56";
+    annotationK19.coordinate = CLLocationCoordinate2DMake(55.790491266225246, 49.11492705345154);
+    [array addObject:annotationK19];
+    
+    Annotation *annotationK20 = [Annotation new];
+    annotationK20.title = @"Проезжая часть ул.Тихомирного";
+    annotationK20.subtitle = @"ул.Тихомирного от ул.Эсперанто до ул.Калинина";
+    annotationK20.coordinate = CLLocationCoordinate2DMake(55.778310808824294, 49.143197536468506);
+    [array addObject:annotationK20];
+
+    Annotation *annotationK21 = [Annotation new];
+    annotationK21.title = @"Территория Речного порта";
+    annotationK21.subtitle = @"Ул.Девятаева, 1";
+    annotationK21.coordinate = CLLocationCoordinate2DMake(55.773326522521, 49.091506004333496);
+    [array addObject:annotationK21];
+    
+    Annotation *annotationK22 = [Annotation new];
+    annotationK22.title = @"Территория перед заводом «Серп и Молот»";
+    annotationK22.subtitle = @"ул.Кл.Цеткин, 8";
+    annotationK22.coordinate = CLLocationCoordinate2DMake(55.799871, 49.06422);
+    [array addObject:annotationK22];
+    
+    Annotation *annotationK23 = [Annotation new];
+    annotationK23.title = @"ЗАГС Кировского района по ул.Фрунзе";
+    annotationK23.subtitle = @"ул.Болотникова, 35 а ";
+    annotationK23.coordinate = CLLocationCoordinate2DMake(55.824153215923374, 49.04194951057434);
+    [array addObject:annotationK23];
+    
+    Annotation *annotationK24 = [Annotation new];
+    annotationK24.title = @"территория перед зданием старого аэропорта";
+    annotationK24.subtitle = @"ул.Космонавтов";
+    annotationK24.coordinate = CLLocationCoordinate2DMake(55.793742363978865, 49.181907176971436);
+    [array addObject:annotationK24];
+    
+    Annotation *annotationK25 = [Annotation new];
+    annotationK25.title = @"прилегающая территория стадиона «Мирас»";
+    annotationK25.subtitle = @"ул.Ак.Глушко, Дж.Файзи  ";
+    annotationK25.coordinate = CLLocationCoordinate2DMake(55.7910522356732, 49.228620529174805);
+    [array addObject:annotationK25];
+    
+    Annotation *annotationK26 = [Annotation new];
+    annotationK26.title = @"прилегающая территория СК «Центр бокса»";
+    annotationK26.subtitle = @"ул.Ак.Глушко, Дж.Файзи  ";
+    annotationK26.coordinate = CLLocationCoordinate2DMake(55.79047317030209, 49.228148460388184);
+    [array addObject:annotationK26];
+    
+    Annotation *annotationK27 = [Annotation new];
+    annotationK27.title = @"прилегающая территория СК «Ак Буре»";
+    annotationK27.subtitle = @"улица Рашида Вагапова, 17";
+    annotationK27.coordinate = CLLocationCoordinate2DMake(55.78403048742547, 49.23145294189453);
+    [array addObject:annotationK27];
+    
+    Annotation *annotationK28 = [Annotation new];
+    annotationK28.title = @"Прилегающая территория к конно-спортивному комплексу «Казань»";
+    annotationK28.subtitle = @"ул. П. Лумумбы, д. 47а";
+    annotationK28.coordinate = CLLocationCoordinate2DMake(55.79322365414599, 49.187378883361816);
+    [array addObject:annotationK28];
+    
+    
+    
 //кал
 }
 @end
