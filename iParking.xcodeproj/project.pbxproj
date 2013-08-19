@@ -32,6 +32,14 @@
 		CEBA743017BE0673006572BB /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA742F17BE0673006572BB /* Annotation.m */; };
 		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
 		CEE4243017BB818A008A32C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE4242F17BB818A008A32C9 /* CoreLocation.framework */; };
+		CEEA32D317C2068C0086AFD0 /* FlipsideViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = CEEA32CB17C2068C0086AFD0 /* FlipsideViewController.h */; };
+		CEEA32D417C2068C0086AFD0 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA32CC17C2068C0086AFD0 /* FlipsideViewController.m */; };
+		CEEA32D517C2068C0086AFD0 /* MainViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = CEEA32CD17C2068C0086AFD0 /* MainViewController.h */; };
+		CEEA32D617C2068C0086AFD0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA32CE17C2068C0086AFD0 /* MainViewController.m */; };
+		CEEA32D717C2068C0086AFD0 /* MapNoteAnnotation.h in Sources */ = {isa = PBXBuildFile; fileRef = CEEA32CF17C2068C0086AFD0 /* MapNoteAnnotation.h */; };
+		CEEA32D817C2068C0086AFD0 /* MapNoteAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA32D017C2068C0086AFD0 /* MapNoteAnnotation.m */; };
+		CEEA32D917C2068C0086AFD0 /* NoteDetailViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = CEEA32D117C2068C0086AFD0 /* NoteDetailViewController.h */; };
+		CEEA32DA17C2068C0086AFD0 /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEA32D217C2068C0086AFD0 /* NoteDetailViewController.m */; };
 		CEEAC4FA17BB9C1700B8E5E1 /* img2012032210034175.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */; };
 		CEEAC4FC17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */; };
 		CEEAC4FE17BB9C2A00B8E5E1 /* kazan-0045.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */; };
@@ -84,6 +92,14 @@
 		CEBA742F17BE0673006572BB /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		CEBD06D717BA506500E22A12 /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = SOURCE_ROOT; };
 		CEE4242F17BB818A008A32C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CEEA32CB17C2068C0086AFD0 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		CEEA32CC17C2068C0086AFD0 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		CEEA32CD17C2068C0086AFD0 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CEEA32CE17C2068C0086AFD0 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CEEA32CF17C2068C0086AFD0 /* MapNoteAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapNoteAnnotation.h; sourceTree = "<group>"; };
+		CEEA32D017C2068C0086AFD0 /* MapNoteAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapNoteAnnotation.m; sourceTree = "<group>"; };
+		CEEA32D117C2068C0086AFD0 /* NoteDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteDetailViewController.h; sourceTree = "<group>"; };
+		CEEA32D217C2068C0086AFD0 /* NoteDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteDetailViewController.m; sourceTree = "<group>"; };
 		CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2012032210034175.jpg; sourceTree = SOURCE_ROOT; };
 		CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JwSvJ_croper_ru.jpeg; sourceTree = SOURCE_ROOT; };
 		CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kazan-0045.jpeg"; sourceTree = SOURCE_ROOT; };
@@ -120,6 +136,7 @@
 		C5F7B79C17B9CC5A00FB6223 = {
 			isa = PBXGroup;
 			children = (
+				CEEA32DB17C206900086AFD0 /* Test */,
 				C5F7B7AE17B9CC5A00FB6223 /* iParking */,
 				C5F7B7CD17B9CC5A00FB6223 /* iParkingTests */,
 				C5F7B7A717B9CC5A00FB6223 /* Frameworks */,
@@ -242,6 +259,21 @@
 			name = ESI;
 			sourceTree = "<group>";
 		};
+		CEEA32DB17C206900086AFD0 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				CEEA32CB17C2068C0086AFD0 /* FlipsideViewController.h */,
+				CEEA32CC17C2068C0086AFD0 /* FlipsideViewController.m */,
+				CEEA32CD17C2068C0086AFD0 /* MainViewController.h */,
+				CEEA32CE17C2068C0086AFD0 /* MainViewController.m */,
+				CEEA32CF17C2068C0086AFD0 /* MapNoteAnnotation.h */,
+				CEEA32D017C2068C0086AFD0 /* MapNoteAnnotation.m */,
+				CEEA32D117C2068C0086AFD0 /* NoteDetailViewController.h */,
+				CEEA32D217C2068C0086AFD0 /* NoteDetailViewController.m */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,6 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEA32D317C2068C0086AFD0 /* FlipsideViewController.h in Sources */,
+				CEEA32D417C2068C0086AFD0 /* FlipsideViewController.m in Sources */,
+				CEEA32D517C2068C0086AFD0 /* MainViewController.h in Sources */,
+				CEEA32D617C2068C0086AFD0 /* MainViewController.m in Sources */,
+				CEEA32D717C2068C0086AFD0 /* MapNoteAnnotation.h in Sources */,
+				CEEA32D817C2068C0086AFD0 /* MapNoteAnnotation.m in Sources */,
+				CEEA32D917C2068C0086AFD0 /* NoteDetailViewController.h in Sources */,
+				CEEA32DA17C2068C0086AFD0 /* NoteDetailViewController.m in Sources */,
 				C5F7B7BF17B9CC5A00FB6223 /* ViewController.m in Sources */,
 				CEBA743017BE0673006572BB /* Annotation.m in Sources */,
 				CE1B1AA717BE746A00A82EC9 /* DataStoreController.m in Sources */,
