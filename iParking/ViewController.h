@@ -11,11 +11,28 @@
 #import "Annotation.h"
 #import "DataStoreController.h"
 
-@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation>{
-    MKMapView *mkMapView;
-}
 
-@property (nonatomic, retain) IBOutlet MKMapView *map;
+#define METERS_PER_MILE 1609.344
+
+@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation>{
+    MKMapView *main_map;
+}
+@property (weak, nonatomic) IBOutlet UIButton *blabla;
+
+
+//@property (nonatomic, retain) IBOutlet MKMapView *main_map;
+@property bool has_zoomed;
+@property CLLocationCoordinate2D current_location;
+
+-(IBAction)showInfo:(id)sender;
+-(IBAction)dropPin:(id)sender;
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context;
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control;
+- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation;
+
+-(NSMutableArray*)serializeAnnotations;
+-(void)applicationWillTerminate:(UIApplication *)application;
 
 @end
 

@@ -84,6 +84,22 @@
                                     options:(NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld)
                                     context:nil];
     
+    if(!has_zoomed) {
+        MKCoordinateRegion region;
+        region.center = self.main_map.userLocation.coordinate;
+        
+        MKCoordinateSpan span;
+        span.latitudeDelta  = 0.01; // Change these values to change the zoom
+        span.longitudeDelta = 0.01;
+        region.span = span;
+        
+        [self.main_map setRegion:region animated:YES];
+        
+        has_zoomed = true;
+    }
+    
+    current_location = self.main_map.userLocation.coordinate;
+  
     
 }
 

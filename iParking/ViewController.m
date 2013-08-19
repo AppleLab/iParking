@@ -15,11 +15,11 @@
     
 @implementation ViewController
 
-@synthesize map;
+//@synthesize main_map;
 
 - (IBAction)GetMyLocation:(id)sender {
-    map.showsUserLocation = YES;
-    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    main_map.showsUserLocation = YES;
+    [main_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -30,57 +30,55 @@
     return self;
 }
 
-/*-(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    //Координаты точки на карте
-    CLLocationCoordinate2D location;
-    location.latitude = 55.7877000;
-    location.longitude= 49.1248000;
-    MKCoordinateSpan span;
-    span.latitudeDelta=0.07;
-    span.longitudeDelta = 0.07;
-    MKCoordinateRegion region;
-    region.center = location;
-    region.span= span;
-    [mkMapView setRegion: region animated:animated];
-}
-*/
+
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    self.map = nil;
+   // self.main_map = nil;
 }
 
 // view annoation at map
 -(void) MapToAnnotation{
     NSMutableArray *array = [DataStoreController GetArrayAnnotation];
     for (int i = 0; i<[array count]; i++) {
-        [map addAnnotation:[array objectAtIndex:i]];
+        [main_map addAnnotation:[array objectAtIndex:i]];
     }
 }
 
+//initWithPlacemark
+-(void) simplecode{
+    
+    MKPlacemark*myPlacemark =[[MKPlacemark alloc] initWithCoordinate:CLLocationCoordinate2DMake(53.90,27.56) addressDictionary:nil];
+    MKMapItem*myPoint =[[MKMapItem alloc] initWithPlacemark:myPlacemark];
+  [myPoint openInMapsWithLaunchOptions:nil];
+//    Annotation *an = [Annotation alloc] initWithCoordine
+//    an.title = @"sdfgsgdsg";
+ //   CLLocation *cloc = [[CLLocation alloc]init];
+ //   MKMapItem * mk = [an mapItem];
+    
+    
+}
+
+
+-(void) workTest{
+    MKMapItem *mapItem = [[MKMapItem alloc] init];
+    //[mapItem setName:geocodedPlacemark.name];
+    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+    MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+    [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]
+                   launchOptions:launchOptions];
+    
+    
+    // [self.annotation.mapItem openInMapsWithLaunchOptions:launchOptions];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-	map.showsUserLocation = YES;
-    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];// слежение заместо положением
-    
-    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:
-                                            [NSArray arrayWithObjects:
-                                             @"Карта",
-                                             @"Спутник",
-                                             @"Гибрид",
-                                             nil]];
-    [segmentedControl addTarget:self action:@selector(changeMapType:) forControlEvents:UIControlEventValueChanged];
-    segmentedControl.frame = CGRectMake(45.0f, 50.0f, 200.0f, 30.0f);
-    segmentedControl.selectedSegmentIndex = 0;
-    segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
-    
-    [self.view addSubview:segmentedControl];
+    [self workTest];
 
-    [self MapToAnnotation];
+
+//    [self MapToAnnotation];
     
     
    /* mkMapView = [[MKMapView alloc]initWithFrame: self.view.bounds];
@@ -92,11 +90,11 @@
 
 - (void)changeMapType:(UISegmentedControl*)sender {
     if (sender.selectedSegmentIndex == 0) {
-        map.mapType = MKMapTypeStandard;
+        main_map.mapType = MKMapTypeStandard;
     } else if (sender.selectedSegmentIndex == 1) {
-        map.mapType = MKMapTypeSatellite;
+        main_map.mapType = MKMapTypeSatellite;
     } else if (sender.selectedSegmentIndex == 2) {
-        map.mapType = MKMapTypeHybrid;
+        main_map.mapType = MKMapTypeHybrid;
     }
 }
 
@@ -125,3 +123,4 @@
 }
 
 @end
+
