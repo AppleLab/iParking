@@ -170,6 +170,7 @@ static bool check=TRUE;
     annotationK11.coordinate = CLLocationCoordinate2DMake(55.83013130165304, 49.14540767669678);
     [array addObject:annotationK11];
     
+    
     Annotation *annotationA11 = [Annotation new];
     annotationA11.title = @"ТЦ «Бэхетле»";
     annotationA11.subtitle = @"ул.Павлюхина 57, кол-во мест: 140";
@@ -231,25 +232,11 @@ static bool check=TRUE;
     annotationA15.coordinate = CLLocationCoordinate2DMake(55.74469677773677, 49.19453501701355);
     [array addObject:annotationA15];
     
-    //удалить
-    Annotation *annotationK17 = [Annotation new];
-    annotationK17.title = @"Центральный стадион";
-    annotationK17.subtitle = @"Ул.Ташаяк, 2а";
-    annotationK17.coordinate = CLLocationCoordinate2DMake(55.796866539878586, 49.0989089012146);
-    [array addObject:annotationK17];
-    
     Annotation *annotationA16 = [Annotation new];
     annotationA16.title = @"ТД «Олимп»";
     annotationA16.subtitle = @"Ул.Р.Зорге 70, кол-во мест: 24";
     annotationA16.coordinate = CLLocationCoordinate2DMake(55.74673188876475, 49.212881326675415);
     [array addObject:annotationA16];
-    
-    //удалить
-    Annotation *annotationK18 = [Annotation new];
-    annotationK18.title = @"Чеховский рынок";
-    annotationK18.subtitle = @"Ул.Ташаяк, 2а";
-    annotationK18.coordinate = CLLocationCoordinate2DMake(55.789574395541194, 49.14776802062988);
-    [array addObject:annotationK18];
     
     Annotation *annotationA17 = [Annotation new];
     annotationA17.title = @"«Евроинтерьер»";
@@ -354,12 +341,6 @@ static bool check=TRUE;
     annotationA29.subtitle = @"Пр.Амирхана 23, кол-во мест: 300";
     annotationA29.coordinate = CLLocationCoordinate2DMake(55.83008610787904, 49.13359522819519);
     [array addObject:annotationA29];
-
-    Annotation *annotationA30 = [Annotation new];
-    annotationA30.title = @"ТК «Парк Хаус»";
-    annotationA30.subtitle = @"пр-т. Ямашева 46/33, кол-во мест: 1640";
-    annotationA30.coordinate = CLLocationCoordinate2DMake(55.829570895143824, 49.11783456802368);
-    [array addObject:annotationA30];
     
     Annotation *annotationK23 = [Annotation new];
     annotationK23.title = @"ЗАГС Кировского района по ул.Фрунзе";
