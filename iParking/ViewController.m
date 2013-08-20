@@ -41,19 +41,40 @@
 // view annoation at map
 -(void) MapToAnnotation{
     NSMutableArray *array = [DataStoreController GetArrayAnnotation];
-    for (int i = 0; i<[array count]; i++) {
-        [main_map addAnnotation:[array objectAtIndex:i]];
-    }
+    [main_map addAnnotations:array];
+
 }
 
 //initWithPlacemark
 
 
-
+//-(void) tabView{
+//    int typesWidth=260, typesHeight=30, distanceFromBottom=60;
+//    mapTypes = new UISegmentedControl(new RectangleF((View.Bounds.Width-typesWidth)/2, View.Bounds.Height-distanceFromBottom, typesWidth, typesHeight));
+//    mapTypes.InsertSegment("Road", 0, false);
+//    mapTypes.InsertSegment("Satellite", 1, false);
+//    mapTypes.InsertSegment("Hybrid", 2, false);
+//    mapTypes.SelectedSegment = 0; // Road is the default
+//    mapTypes.AutoresizingMask = UIViewAutoresizing.FlexibleTopMargin;
+//    mapTypes.ValueChanged += (s, e) => {
+//        switch(mapTypes.SelectedSegment) {
+//            case 0:
+//                mapView.MapType = MKMapType.Standard;
+//                break;
+//            case 1:
+//                mapView.MapType = MKMapType.Satellite;
+//                break;
+//            case 2:
+//                mapView.MapType = MKMapType.Hybrid;
+//                break;
+//        }
+//    };
+//}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self GetMyLocation:nil];
 //      //NSDictionary *addressDict = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
 //    MKPlacemark * myPlacemark = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(55.74762259387401, 49.21452283859253) addressDictionary:nil];
 //    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:myPlacemark];
