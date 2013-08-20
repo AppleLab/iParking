@@ -16,7 +16,7 @@
 @implementation ViewController
 
 @synthesize main_map;
-
+@synthesize array;
 - (IBAction)GetMyLocation:(id)sender {
     main_map.showsUserLocation = YES;
     [main_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
@@ -40,12 +40,28 @@
 
 // view annoation at map
 -(void) MapToAnnotation{
-    NSMutableArray *array = [DataStoreController GetArrayAnnotation];
+    array = [DataStoreController GetArrayAnnotation];
     [main_map addAnnotations:array];
 
 }
 
+-(void) closestPin{
 
+    CLLocationDistance distance;
+    for (int i=0; i<array.count; i++) {
+    Annotation *an= [array objectAtIndex:i];
+    double lat=an.coordinate.latitude;
+    double lon=an.coordinate.longitude;
+  //  CLLocation *mylocation = [[CLLocation alloc] initWithLatitude:location.latitude longitude:location.longitude];
+    CLLocation *secondLocation = [[CLLocation alloc] initWithLatitude:lat longitude:lon];
+        
+        CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:an.coordinate.latitude longitude:an.coordinate.longitude];
+        CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:main_map.userLocation.coordinate.latitude longitude:main_map.userLocation.coordinate.longitude];
+        
+        distance = [secondLocation distanceFromLocation:myLocation];
+      // distance= [an.coordinate distanceFromLocation:location];
+    }
+}
 
 
 
