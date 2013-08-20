@@ -39,12 +39,12 @@
 }
 
 // view annoation at map
-//-(void) MapToAnnotation{
-//    NSMutableArray *array = [DataStoreController GetArrayAnnotation];
-//    for (int i = 0; i<[array count]; i++) {
-//        [main_map addAnnotation:[array objectAtIndex:i]];
-//    }
-//}
+-(void) MapToAnnotation{
+    NSMutableArray *array = [DataStoreController GetArrayAnnotation];
+    for (int i = 0; i<[array count]; i++) {
+        [main_map addAnnotation:[array objectAtIndex:i]];
+    }
+}
 
 //initWithPlacemark
 
@@ -54,10 +54,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-      //NSDictionary *addressDict = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
-    MKPlacemark * myPlacemark = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(55.74762259387401, 49.21452283859253) addressDictionary:nil];
-    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:myPlacemark];
-    mapItem.name=@"Супермаркет «Бэхетле»";
+//      //NSDictionary *addressDict = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+//    MKPlacemark * myPlacemark = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(55.74762259387401, 49.21452283859253) addressDictionary:nil];
+//    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:myPlacemark];
+//    mapItem.name=@"Супермаркет «Бэхетле»";
     /*
      NSArray* mapitems = @[point1,point2,point3];
      [MKMapItems openMapWithItems:mapitems launchOptions:nil];
@@ -65,7 +65,8 @@
     /*NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
     MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
     [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]launchOptions:launchOptions];
-    [self MapToAnnotation];*/
+     */
+    [self MapToAnnotation];
     
     
     

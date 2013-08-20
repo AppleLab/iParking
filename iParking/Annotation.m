@@ -12,6 +12,7 @@
 
 @synthesize coordinate;
 @synthesize title;
+@synthesize subtitle;
 
 - (void)dealloc {
     self.title = nil;
@@ -19,29 +20,7 @@
     
 }
 
-- (id)initWithLocation: (CLLocationCoordinate2D) l
-{
-    self = [super init];
-    if (self) {
-        self.coordinate = l;
-    }
-    return self;
-}
 
-
-
-- (CLLocationCoordinate2D)coordinate;
-{
-    return self.coordinate;
-}
-
-- (void)setCoordinate:(CLLocationCoordinate2D)newCoordinate
-{
-    NSLog(@"HASDKHASKJHD");
-    self.coordinate = newCoordinate;
-    NSLog(@"ZZZZHSAHDIAUHD");
-
-}
 
 - (MKMapItem*)mapItem {
     NSDictionary *addressDict = @{};
