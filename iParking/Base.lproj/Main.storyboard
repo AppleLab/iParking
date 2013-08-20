@@ -76,7 +76,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="KAZAN" id="uCY-Pa-lvu"/>
                     <connections>
-                        <outlet property="blabla" destination="PLs-Gc-qhv" id="Qee-cp-G43"/>
+                        <outlet property="blabla" destination="usk-jS-mQJ" id="Q9z-d6-bTf"/>
                         <outlet property="main_map" destination="R1d-2G-9QG" id="aey-Es-VNC"/>
                     </connections>
                 </viewController>
