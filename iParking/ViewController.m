@@ -57,9 +57,9 @@
     CLLocationCoordinate2D startCoord = CLLocationCoordinate2DMake(55.779215877174096, 49.129743576049805);
     MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(startCoord, 20000 , 20000)];
     [main_map setRegion:adjustedRegion animated:YES];
-
     [self MapToAnnotation];
     
+    //add new code
     
     
 }
