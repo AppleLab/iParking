@@ -46,7 +46,7 @@ static bool check=TRUE;
 
     Annotation *annotation1 = [Annotation new];
     annotation1.title = @"ТЦ «Сувар Плаза»";
-    annotation1.subtitle = @"ул.Спартаковская, 6";
+    annotation1.subtitle = @"ул.Спартаковская 6, кол-во мест: 498 (платная) ";
     annotation1.coordinate = CLLocationCoordinate2DMake(55.779215877174096, 49.129743576049805);
     [array addObject:annotation1];
     
@@ -58,7 +58,7 @@ static bool check=TRUE;
     
     Annotation *annotation3 = [Annotation new];
     annotation3.title = @"Гипермаркет «Кольцо» ";
-    annotation3.subtitle = @"ул.Петербургская, 1";
+    annotation3.subtitle = @"ул.Петербургская 1, кол-во мест: 60";
     annotation3.coordinate = CLLocationCoordinate2DMake(55.786455667264896, 49.12436842918396);
     [array addObject:annotation3];
     
@@ -70,7 +70,7 @@ static bool check=TRUE;
     
     Annotation *annotationA3 = [Annotation new];
     annotationA3.title = @"ТРК «Корстон-Казань»";
-    annotationA3.subtitle = @"ул.Н.Ершова, 1а";
+    annotationA3.subtitle = @"ул.Н.Ершова 1а, кол-во мест: 120(платная)";
     annotationA3.coordinate = CLLocationCoordinate2DMake(55.793808710087056, 49.14950609207153);
     [array addObject:annotationA3];
     
@@ -94,7 +94,7 @@ static bool check=TRUE;
     
     Annotation *annotationA5 = [Annotation new];
     annotationA5.title = @"ТЦ «Модная семья»";
-    annotationA5.subtitle = @"ул.Б.Шахиди, 17";
+    annotationA5.subtitle = @"ул.Б.Шахиди 17, кол-во мест: 70";
     annotationA5.coordinate = CLLocationCoordinate2DMake(55.78679047500998 , 49.106547832489014);
     [array addObject:annotationA5];
     
@@ -118,7 +118,7 @@ static bool check=TRUE;
     
     Annotation *annotationA7 = [Annotation new];
     annotationA7.title = @"ТД «Казанский ЦУМ»";
-    annotationA7.subtitle = @"ул.Московская, 2";
+    annotationA7.subtitle = @"ул.Московская 2, кол-во мест: 200";
     annotationA7.coordinate = CLLocationCoordinate2DMake(55.79268081087669 , 49.10184860229492);
     [array addObject:annotationA7];
     
@@ -136,7 +136,7 @@ static bool check=TRUE;
     
     Annotation *annotationA8 = [Annotation new];
     annotationA8.title = @"ТРК «Пирамида»";
-    annotationA8.subtitle = @"ул.Московская, 3";
+    annotationA8.subtitle = @"ул.Московская 3, кол-во мест: 150";
     annotationA8.coordinate = CLLocationCoordinate2DMake(55.794791825535846 , 49.10321116447449);
     [array addObject:annotationA8];
     
@@ -148,7 +148,7 @@ static bool check=TRUE;
     
     Annotation *annotationA9 = [Annotation new];
     annotationA9.title = @"Центральный стадион";
-    annotationA9.subtitle = @"ул.Ташаяк, 2а";
+    annotationA9.subtitle = @"ул.Ташаяк 2а, кол-во мест: 1000";
     annotationA9.coordinate = CLLocationCoordinate2DMake(55.796757981984776, 49.096269607543945);
     [array addObject:annotationA9];
     
@@ -172,7 +172,7 @@ static bool check=TRUE;
     
     Annotation *annotationA11 = [Annotation new];
     annotationA11.title = @"ТЦ «Бэхетле»";
-    annotationA11.subtitle = @"ул.Павлюхина, 57";
+    annotationA11.subtitle = @"ул.Павлюхина 57, кол-во мест: 140";
     annotationA11.coordinate = CLLocationCoordinate2DMake(55.77447006827832, 49.13863241672516);
     [array addObject:annotationA11];
     
@@ -190,7 +190,7 @@ static bool check=TRUE;
     
     Annotation *annotationA12 = [Annotation new];
     annotationA12.title = @"«Центральный рынок г.Казани»";
-    annotationA12.subtitle = @"Ул.М.Межлаука, 13";
+    annotationA12.subtitle = @"Ул.М.Межлаука 13, кол-во мест: 300 (платная)";
     annotationA12.coordinate = CLLocationCoordinate2DMake(55.78644661836699, 49.10843074321747);
     [array addObject:annotationA12];
     
@@ -202,7 +202,7 @@ static bool check=TRUE;
     
     Annotation *annotationA13 = [Annotation new];
     annotationA13.title = @"Гостиница «Татарстан»";
-    annotationA13.subtitle = @"Ул.Пушкина, 4";
+    annotationA13.subtitle = @"Ул.Пушкина 4, кол-во мест: 30";
     annotationA13.coordinate = CLLocationCoordinate2DMake(55.78650091172291, 49.122474789619446);
     [array addObject:annotationA13];
     
@@ -215,7 +215,7 @@ static bool check=TRUE;
 
     Annotation *annotationA14 = [Annotation new];
     annotationA14.title = @"Чеховский рынок";
-    annotationA14.subtitle = @"Ул.Чехова. 2";
+    annotationA14.subtitle = @"Ул.Чехова 2, кол-во мест: 60";
     annotationA14.coordinate = CLLocationCoordinate2DMake(55.789580427655686, 49.147692918777466);
     [array addObject:annotationA14];
     
@@ -227,7 +227,7 @@ static bool check=TRUE;
     
     Annotation *annotationA15 = [Annotation new];
     annotationA15.title = @"«Сити-центр»";
-    annotationA15.subtitle = @"Ул.Парина, 3";
+    annotationA15.subtitle = @"Ул.Парина 3, кол-во мест: 511";
     annotationA15.coordinate = CLLocationCoordinate2DMake(55.74469677773677, 49.19453501701355);
     [array addObject:annotationA15];
     
@@ -240,7 +240,7 @@ static bool check=TRUE;
     
     Annotation *annotationA16 = [Annotation new];
     annotationA16.title = @"ТД «Олимп»";
-    annotationA16.subtitle = @"Ул.Р.Зорге, 70";
+    annotationA16.subtitle = @"Ул.Р.Зорге 70, кол-во мест: 24";
     annotationA16.coordinate = CLLocationCoordinate2DMake(55.74673188876475, 49.212881326675415);
     [array addObject:annotationA16];
     
@@ -253,7 +253,7 @@ static bool check=TRUE;
     
     Annotation *annotationA17 = [Annotation new];
     annotationA17.title = @"«Евроинтерьер»";
-    annotationA17.subtitle = @"Ул.Р.Зорге, 82";
+    annotationA17.subtitle = @"Ул.Р.Зорге 82, кол-во мест: 15";
     annotationA17.coordinate = CLLocationCoordinate2DMake(55.7454697700952, 49.21507000923157);
     [array addObject:annotationA17];
     
@@ -265,7 +265,7 @@ static bool check=TRUE;
     
     Annotation *annotationA18 = [Annotation new];
     annotationA18.title = @"Центральный дом мебели";
-    annotationA18.subtitle = @"Ул.Тукая, 115";
+    annotationA18.subtitle = @"Ул.Тукая 115, кол-во мест: 165";
     annotationA18.coordinate = CLLocationCoordinate2DMake(55.76673011297474, 49.12569880485535);
     [array addObject:annotationA18];
     
@@ -277,51 +277,51 @@ static bool check=TRUE;
     
     Annotation *annotationA19 = [Annotation new];
     annotationA19.title = @"ПТЦ «Ирбис»";
-    annotationA19.subtitle = @"Ул.Фучика, 105а";
+    annotationA19.subtitle = @"Ул.Фучика 105а, кол-во мест: 20";
     annotationA19.coordinate = CLLocationCoordinate2DMake(55.755013152136456, 49.22999382019043);
     [array addObject:annotationA19];
     
     //проверить
     Annotation *annotationA20 = [Annotation new];
     annotationA20.title = @"ТК «Проспект»";
-    annotationA20.subtitle = @"Пр.Победы";
+    annotationA20.subtitle = @"Пр.Победы 50а, кол-во мест: ";
     annotationA20.coordinate = CLLocationCoordinate2DMake(55.772505804094344 , 49.21898066997528);
     [array addObject:annotationA20];
     
     Annotation *annotationA21 = [Annotation new];
     annotationA21.title = @"ЗАО ТК «Эдельвейс»";
-    annotationA21.subtitle = @"Ул.Оренбургский тракт, 144";
+    annotationA21.subtitle = @"Ул.Оренбургский тракт 144, кол-во мест: 52";
     annotationA21.coordinate = CLLocationCoordinate2DMake(55.72952068254925, 49.19747471809387);
     [array addObject:annotationA21];
     
     Annotation *annotationA22 = [Annotation new];
     annotationA22.title = @"ТК «Бэхетле»";
-    annotationA22.subtitle = @"Оренбургский тракт, 22г";
+    annotationA22.subtitle = @"Оренбургский тракт 22г, кол-во мест: 98";
     annotationA22.coordinate = CLLocationCoordinate2DMake(55.753443379431566, 49.16010618209839);
     [array addObject:annotationA22];
     
     Annotation *annotationA23 = [Annotation new];
     annotationA23.title = @"Супермаркет «Бэхетле»";
-    annotationA23.subtitle = @"Ул.Зорге, 77";
+    annotationA23.subtitle = @"Ул.Зорге 77, кол-во мест: 30";
     annotationA23.coordinate = CLLocationCoordinate2DMake(55.74762259387401, 49.21452283859253);
     [array addObject:annotationA23];
     
     Annotation *annotationA24 = [Annotation new];
     annotationA24.title = @"ТЦ «Мега» (Икея)";
-    annotationA24.subtitle = @"пр.Победы, 141";
+    annotationA24.subtitle = @"пр.Победы 141, кол-во мест: 2100";
     annotationA24.coordinate = CLLocationCoordinate2DMake(55.78093544912811 , 49.21302080154419);
     [array addObject:annotationA24];
     
     Annotation *annotationA25 = [Annotation new];
     annotationA25.title = @"ТЦ «Мега» (Икея)";
-    annotationA25.subtitle = @"пр.Победы, 141";
+    annotationA25.subtitle = @"пр.Победы 141, кол-во мест: 384 (платная)";
     annotationA25.coordinate = CLLocationCoordinate2DMake(55.78093544912811 , 49.21302080154419);
     [array addObject:annotationA25];
-    
-    //посмотреть адрес
+ 
+    ////////
     Annotation *annotationA26 = [Annotation new];
     annotationA26.title = @"«Метро Кеш энд Керри»";
-    annotationA26.subtitle = @"ул.Вахитова";
+    annotationA26.subtitle = @"ул.Вахитова 4, кол-во мест: 539";
     annotationA26.coordinate = CLLocationCoordinate2DMake(55.76310855356419,  49.11718010902405);
     [array addObject:annotationA26];
 
@@ -333,13 +333,13 @@ static bool check=TRUE;
     
     Annotation *annotationA27 = [Annotation new];
     annotationA27.title = @"Магазин «Бэхетле» ";
-    annotationA27.subtitle = @"ул. Залесная, 66";
+    annotationA27.subtitle = @"ул. Залесная 66, кол-во мест: 60";
     annotationA27.coordinate = CLLocationCoordinate2DMake(55.850496296363794 , 48.89539897441864);
     [array addObject:annotationA27];
 
     Annotation *annotationA28 = [Annotation new];
     annotationA28.title = @"Магазин «Эдельвейс»";
-    annotationA28.subtitle = @"Ул.Адоратского, 12";
+    annotationA28.subtitle = @"Ул.Адоратского 12, кол-во мест: 30";
     annotationA28.coordinate = CLLocationCoordinate2DMake(55.83189080509834, 49.148465394973755);
     [array addObject:annotationA28];
     
@@ -348,16 +348,16 @@ static bool check=TRUE;
     annotationK22.subtitle = @"ул.Кл.Цеткин 8, кол-во мест: 440";
     annotationK22.coordinate = CLLocationCoordinate2DMake(55.799871, 49.06422);
     [array addObject:annotationK22];
-    //адрес
+//////
     Annotation *annotationA29 = [Annotation new];
     annotationA29.title = @"ТЦ «Бэхетле»";
-    annotationA29.subtitle = @"Пр.Амирхана";
+    annotationA29.subtitle = @"Пр.Амирхана 23, кол-во мест: 300";
     annotationA29.coordinate = CLLocationCoordinate2DMake(55.83008610787904, 49.13359522819519);
     [array addObject:annotationA29];
 
     Annotation *annotationA30 = [Annotation new];
     annotationA30.title = @"ТК «Парк Хаус»";
-    annotationA30.subtitle = @"пр-т. Ямашева, 46/33";
+    annotationA30.subtitle = @"пр-т. Ямашева 46/33, кол-во мест: 1640";
     annotationA30.coordinate = CLLocationCoordinate2DMake(55.829570895143824, 49.11783456802368);
     [array addObject:annotationA30];
     
@@ -375,7 +375,7 @@ static bool check=TRUE;
     
     Annotation *annotationA31 = [Annotation new];
     annotationA31.title = @"ТК «Тандем»";
-    annotationA31.subtitle = @"просп. Ибрагимова, 56";
+    annotationA31.subtitle = @"просп. Ибрагимова 56, кол-во мест: 1300";
     annotationA31.coordinate = CLLocationCoordinate2DMake(55.82133259038037, 49.09342646598816);
     [array addObject:annotationA31];
     
@@ -387,7 +387,7 @@ static bool check=TRUE;
     
     Annotation *annotationA32 = [Annotation new];
     annotationA32.title = @"ТК «Южный», Мегастрой";
-    annotationA32.subtitle = @"проспект Победы, 109";
+    annotationA32.subtitle = @"проспект Победы 109, кол-во мест: 1000";
     annotationA32.coordinate = CLLocationCoordinate2DMake(55.772415282621516, 49.21720504760742);
     [array addObject:annotationA32];
     
@@ -399,7 +399,7 @@ static bool check=TRUE;
     
     Annotation *annotationA33 = [Annotation new];
     annotationA33.title = @"Мегастрой, Агава";
-    annotationA33.subtitle = @"ул Азинская 2-я, 7";
+    annotationA33.subtitle = @"ул Азинская 2-я 7, кол-во мест: 350";
     annotationA33.coordinate = CLLocationCoordinate2DMake(55.800876938848695, 49.20900821685791);
     [array addObject:annotationA33];
     
@@ -411,7 +411,7 @@ static bool check=TRUE;
     
     Annotation *annotationA34 = [Annotation new];
     annotationA34.title = @"ТЦ «Азино»";
-    annotationA34.subtitle = @"Ул.Минская, 9";
+    annotationA34.subtitle = @"Ул.Минская 9, кол-во мест: 200";
     annotationA34.coordinate = CLLocationCoordinate2DMake(55.773459284172084, 49.23031568527222 );
     [array addObject:annotationA34];
     
