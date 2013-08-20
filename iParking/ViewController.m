@@ -15,7 +15,7 @@
     
 @implementation ViewController
 
-//@synthesize main_map;
+@synthesize main_map;
 
 - (IBAction)GetMyLocation:(id)sender {
     main_map.showsUserLocation = YES;
@@ -35,7 +35,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-   // self.main_map = nil;
+    self.main_map = nil;
 }
 
 // view annoation at map
@@ -50,33 +50,7 @@
 
 
 
--(void) workTest{
-    Annotation *annotationA23 = [[Annotation alloc]init];
-    annotationA23.title = @"Супермаркет «Бэхетле»";
-    annotationA23.subtitle = @"Ул.Зорге, 77";
 
-    
-    NSDictionary *addressDict = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
-    
-    MKPlacemark *placemark = [[MKPlacemark alloc]
-                              initWithCoordinate:CLLocationCoordinate2DMake(55.74762259387401, 49.21452283859253)
-                              addressDictionary:addressDict];
-    
-    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
-    mapItem.name = annotationA23.title;
-
-    
-    
-   // MKMapItem *mapItem = [[MKMapItem alloc] init];
-    //[mapItem setName:geocodedPlacemark.name];
-    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
-    MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
-    [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]
-                   launchOptions:launchOptions];
-    
-
-     //[self.annotation.mapItem openInMapsWithLaunchOptions:launchOptions];
-}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -88,8 +62,6 @@
      NSArray* mapitems = @[point1,point2,point3];
      [MKMapItems openMapWithItems:mapitems launchOptions:nil];
      */
-    [mapItem openInMapsWithLaunchOptions:nil];
-    
     /*NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
     MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
     [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]launchOptions:launchOptions];
