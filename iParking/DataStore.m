@@ -410,42 +410,96 @@ static bool check=TRUE;
     annotationK29.subtitle = @"ул.Ибрагимова 54, кол-во мест: 200";
     annotationK29.coordinate = CLLocationCoordinate2DMake(55.827949888925154, 49.09340500831604);
     [array addObject:annotationK29];
+
+    Annotation *annotationA35 = [Annotation new];
+    annotationA35.title = @"ТЦ «Грани»";
+    annotationA35.subtitle = @"Ул.Сибирский тракт, 34";
+    annotationA35.coordinate = CLLocationCoordinate2DMake(55.81792104780794, 49.1828727722168 );
+    [array addObject:annotationA35];
+   
+    Annotation *annotationA36 = [Annotation new];
+    annotationA36.title = @"ТРЦ «Франт»";
+    annotationA36.subtitle = @"Ул.Фучика, 90";
+    annotationA36.coordinate = CLLocationCoordinate2DMake(55.76346468848582, 49.23324465751648  );
+    [array addObject:annotationA36];
+
+    Annotation *annotationA37 = [Annotation new];
+    annotationA37.title = @"Регистрационная палата";
+    annotationA37.subtitle = @"Ул.Авангардная-Кулагина, 74";
+    annotationA37.coordinate = CLLocationCoordinate2DMake(55.74088896297058,  49.14430260658264 );
+    [array addObject:annotationA37];
     
     Annotation *annotationK30 = [Annotation new];
     annotationK30.title = @"Центр покупок ООО «Ринго»";
     annotationK30.subtitle = @"Ул.Чистопольская 7, кол-во мест: 40";
     annotationK30.coordinate = CLLocationCoordinate2DMake(55.820320008253084, 49.10446643829346);
     [array addObject:annotationK30];
+    Annotation *annotationA38 = [Annotation new];
+    annotationA38.title = @"Торговые ряды «Алтын»";
+    annotationA38.subtitle = @"Ул.Марселя Салимжанова, 5";
+    annotationA38.coordinate = CLLocationCoordinate2DMake(55.78138795545146, 49.12470102310181  );
+    [array addObject:annotationA38];
     
     Annotation *annotationK31 = [Annotation new];
     annotationK31.title = @"ООО «Мебель-град»";
     annotationK31.subtitle = @"Ул.Рахимова 8, кол-во мест: 117";
     annotationK31.coordinate = CLLocationCoordinate2DMake(55.84036784460572, 49.03098464012146);
     [array addObject:annotationK31];
+    Annotation *annotationA39 = [Annotation new];
+    annotationA39.title = @"ТЦ «Ягодная слобода»";
+    annotationA39.subtitle = @"Ул.Краснококшайская, 150/2";
+    annotationA39.coordinate = CLLocationCoordinate2DMake(55.817776382148196, 49.06425476074219 );
+    [array addObject:annotationA39];
 
     Annotation *annotationK32 = [Annotation new];
     annotationK32.title = @"Автосалон ООО «ТрансТехСервис»";
     annotationK32.subtitle = @"Пр.Ибрагимова 48, кол-во мест: 80";
     annotationK32.coordinate = CLLocationCoordinate2DMake(55.823244671368315, 49.093879759311676);
     [array addObject:annotationK32];
+    Annotation *annotationA40 = [Annotation new];
+    annotationA40.title = @"ТЦ «Петрушка»";
+    annotationA40.subtitle = @"Ул.Адмиралтейская, 3";
+    annotationA40.coordinate = CLLocationCoordinate2DMake(55.800617632307564, 49.05348300933838 );
+    [array addObject:annotationA40];
     
     Annotation *annotationK33 = [Annotation new];
     annotationK33.title = @"Автосалон ООО «РРТ-Казань»";
     annotationK33.subtitle = @"Ул.Восстания 131, кол-во мест: 50";
     annotationK33.coordinate = CLLocationCoordinate2DMake(55.829304247276255, 49.04767334461212);
     [array addObject:annotationK33];
+    Annotation *annotationA41 = [Annotation new];
+    annotationA41.title = @"Мебельный универсальный магазин";
+    annotationA41.subtitle = @"Ул.Лазарева, 7";
+    annotationA41.coordinate = CLLocationCoordinate2DMake(55.81953644447354, 49.0504789352417 );
+    [array addObject:annotationA41];
     
     Annotation *annotationK34 = [Annotation new];
     annotationK34.title = @"ТЦ «Саборг»";
     annotationK34.subtitle = @"Ул.Лушникова 10, кол-во мест: 40";
     annotationK34.coordinate = CLLocationCoordinate2DMake(55.81949425213002, 49.08371150493622);
     [array addObject:annotationK34];
+    Annotation *annotationA42 = [Annotation new];
+    annotationA42.title = @"ТЦ «Факел»";
+    annotationA42.subtitle = @"Ул.Горьковское шоссе, 47";
+    annotationA42.coordinate = CLLocationCoordinate2DMake(55.82634086799229, 49.026339054107666 );
+    [array addObject:annotationA42];
+
+    Annotation *annotationA43 = [Annotation new];
+    annotationA43.title = @"Автосалон «Акос»";
+    annotationA43.subtitle = @"Ул.Горьковское шоссе, 49";
+    annotationA43.coordinate = CLLocationCoordinate2DMake(55.826714504254426, 49.02342081069946 );
+    [array addObject:annotationA43];
     
     Annotation *annotationK35 = [Annotation new];
     annotationK35.title = @"Гипермаркет «М.Видео»";
     annotationK35.subtitle = @"Ул.Декабристов 79, кол-во мест: 150";
     annotationK35.coordinate = CLLocationCoordinate2DMake(55.81745238939662, 49.093434512615204);
     [array addObject:annotationK35];
+    Annotation *annotationA44 = [Annotation new];
+    annotationA44.title = @"Автосалон ООО «Парус»";
+    annotationA44.subtitle = @"Ул.Кожевенная, 28";
+    annotationA44.coordinate = CLLocationCoordinate2DMake(55.803831705381604, 49.067344665527344 );
+    [array addObject:annotationA44];
 
 //кал
 }
