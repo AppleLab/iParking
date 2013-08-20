@@ -1,28 +1,24 @@
 //
-//  ViewController.h
-//  iParking
+//  MainViewController.h
+//  MapNotes
 //
-//  Created by Ramil Garaev on 12.08.13.
-//  Copyright (c) 2013 Ramil Garaev. All rights reserved.
+//  Created by Mike Feineman on 6/28/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FlipsideViewController.h"
+#import "NoteDetailViewController.h"
 #import <MapKit/MapKit.h>
-#import "Annotation.h"
-#import "DataStoreController.h"
-
 
 #define METERS_PER_MILE 1609.344
 
-@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation>{
-    MKMapView *main_map;
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, NoteDetailViewControllerDelegate, MKMapViewDelegate> {
+    IBOutlet MKMapView *main_map;
 }
-@property (weak, nonatomic) IBOutlet UIButton *blabla;
 
-
-//@property (nonatomic, retain) IBOutlet MKMapView *main_map;
 @property bool has_zoomed;
 @property CLLocationCoordinate2D current_location;
+@property MKMapView* main_map;
 
 -(IBAction)showInfo:(id)sender;
 -(IBAction)dropPin:(id)sender;
@@ -35,4 +31,3 @@
 -(void)applicationWillTerminate:(UIApplication *)application;
 
 @end
-

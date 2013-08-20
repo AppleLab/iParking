@@ -15,11 +15,11 @@
     
 @implementation ViewController
 
-@synthesize map;
+//@synthesize main_map;
 
 - (IBAction)GetMyLocation:(id)sender {
-    map.showsUserLocation = YES;
-    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
+    main_map.showsUserLocation = YES;
+    [main_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -30,98 +30,74 @@
     return self;
 }
 
-/*-(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    //Координаты точки на карте
-    CLLocationCoordinate2D location;
-    location.latitude = 55.7877000;
-    location.longitude= 49.1248000;
-    MKCoordinateSpan span;
-    span.latitudeDelta=0.07;
-    span.longitudeDelta = 0.07;
-    MKCoordinateRegion region;
-    region.center = location;
-    region.span= span;
-    [mkMapView setRegion: region animated:animated];
-}
-*/
+
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    self.map = nil;
+   // self.main_map = nil;
 }
 
 // view annoation at map
--(void) MapToAnnotation{
-    NSMutableArray *array = [DataStoreController GetArrayAnnotation];
-    for (int i = 0; i<[array count]; i++) {
-        [map addAnnotation:[array objectAtIndex:i]];
-    }
-}
+//-(void) MapToAnnotation{
+//    NSMutableArray *array = [DataStoreController GetArrayAnnotation];
+//    for (int i = 0; i<[array count]; i++) {
+//        [main_map addAnnotation:[array objectAtIndex:i]];
+//    }
+//}
 
+//initWithPlacemark
+
+
+
+-(void) workTest{
+    Annotation *annotationA23 = [[Annotation alloc]init];
+    annotationA23.title = @"Супермаркет «Бэхетле»";
+    annotationA23.subtitle = @"Ул.Зорге, 77";
+
+    
+    NSDictionary *addressDict = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+    
+    MKPlacemark *placemark = [[MKPlacemark alloc]
+                              initWithCoordinate:CLLocationCoordinate2DMake(55.74762259387401, 49.21452283859253)
+                              addressDictionary:addressDict];
+    
+    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+    mapItem.name = annotationA23.title;
+
+    
+    
+   // MKMapItem *mapItem = [[MKMapItem alloc] init];
+    //[mapItem setName:geocodedPlacemark.name];
+    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+    MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+    [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]
+                   launchOptions:launchOptions];
+    
+
+     //[self.annotation.mapItem openInMapsWithLaunchOptions:launchOptions];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+      //NSDictionary *addressDict = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+    MKPlacemark * myPlacemark = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(55.74762259387401, 49.21452283859253) addressDictionary:nil];
+    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:myPlacemark];
+    mapItem.name=@"Супермаркет «Бэхетле»";
+    /*
+     NSArray* mapitems = @[point1,point2,point3];
+     [MKMapItems openMapWithItems:mapitems launchOptions:nil];
+     */
+    [mapItem openInMapsWithLaunchOptions:nil];
     
-	map.showsUserLocation = YES;
-    [map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];// слежение заместо положением
-    
-    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:
-                                            [NSArray arrayWithObjects:
-                                             @"Карта",
-                                             @"Спутник",
-                                             @"Гибрид",
-                                             nil]];
-    [segmentedControl addTarget:self action:@selector(changeMapType:) forControlEvents:UIControlEventValueChanged];
-    segmentedControl.frame = CGRectMake(45.0f, 50.0f, 200.0f, 30.0f);
-    segmentedControl.selectedSegmentIndex = 0;
-    segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
-    
-    [self.view addSubview:segmentedControl];
-
-    [self MapToAnnotation];
+    /*NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+    MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+    [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]launchOptions:launchOptions];
+    [self MapToAnnotation];*/
     
     
-   /* mkMapView = [[MKMapView alloc]initWithFrame: self.view.bounds];
-    [self.view addSubview:mkMapView];
-    */
     
-    
-}
-
-- (void)changeMapType:(UISegmentedControl*)sender {
-    if (sender.selectedSegmentIndex == 0) {
-        map.mapType = MKMapTypeStandard;
-    } else if (sender.selectedSegmentIndex == 1) {
-        map.mapType = MKMapTypeSatellite;
-    } else if (sender.selectedSegmentIndex == 2) {
-        map.mapType = MKMapTypeHybrid;
-    }
-}
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
-{
-    if (annotation == mapView.userLocation) {
-        return nil;
-    }
-    
-    static NSString* annotationIdentifier = @"annotationIdentifier";
-    MKPinAnnotationView* annotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
-    
-    if (!annotationView) {
-        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
-                                                         reuseIdentifier:nil];
-        if([[annotation title] isEqualToString:@"Annotation1"]) {
-            [annotationView setPinColor:MKPinAnnotationColorRed];
-        } else {
-            [annotationView setPinColor:MKPinAnnotationColorGreen];
-            annotationView.animatesDrop = YES;
-            annotationView.canShowCallout = YES;
-        }
-    }
-    
-    return annotationView;
 }
 
 @end
+
