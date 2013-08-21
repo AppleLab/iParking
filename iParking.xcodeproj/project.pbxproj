@@ -39,6 +39,7 @@
 		CEEAC4FE17BB9C2A00B8E5E1 /* kazan-0045.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */; };
 		CEF746F817BCDDB800943206 /* 13254411332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF746F717BCDDB800943206 /* 13254411332.jpg */; };
 		CEF746FA17BCDF2A00943206 /* 440173519_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF746F917BCDF2A00943206 /* 440173519_640.jpg */; };
+		CEF7B4F317C4DAB6001EDC6F /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4F217C4DAB6001EDC6F /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kazan-0045.jpeg"; sourceTree = SOURCE_ROOT; };
 		CEF746F717BCDDB800943206 /* 13254411332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13254411332.jpg; sourceTree = SOURCE_ROOT; };
 		CEF746F917BCDF2A00943206 /* 440173519_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 440173519_640.jpg; sourceTree = SOURCE_ROOT; };
+		CEF7B4F117C4DAB6001EDC6F /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		CEF7B4F217C4DAB6001EDC6F /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +236,8 @@
 				CEBA742F17BE0673006572BB /* Annotation.m */,
 				8F02FA2517C4CE4F001D60C5 /* ViewControllerInf.h */,
 				8F02FA2617C4CE4F001D60C5 /* ViewControllerInf.m */,
+				CEF7B4F117C4DAB6001EDC6F /* EditViewController.h */,
+				CEF7B4F217C4DAB6001EDC6F /* EditViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 				CEBA743017BE0673006572BB /* Annotation.m in Sources */,
 				CE1B1AA717BE746A00A82EC9 /* DataStoreController.m in Sources */,
 				C5F7B7B917B9CC5A00FB6223 /* AppDelegate.m in Sources */,
+				CEF7B4F317C4DAB6001EDC6F /* EditViewController.m in Sources */,
 				C5F7B7E317B9D74500FB6223 /* Core.m in Sources */,
 				C5F7B7B517B9CC5A00FB6223 /* main.m in Sources */,
 				CE1B1AA417BE744C00A82EC9 /* DataStore.m in Sources */,

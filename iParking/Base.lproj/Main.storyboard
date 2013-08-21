@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="400" y="-896"/>
         </scene>
-        <!--View Controller - Edit Pin-->
+        <!--Edit View Controller - Edit Pin-->
         <scene sceneID="XaK-FX-yoE">
             <objects>
-                <viewController id="wuQ-Hd-pJO" sceneMemberID="viewController">
+                <viewController id="wuQ-Hd-pJO" customClass="EditViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pc2-IS-2h1"/>
                         <viewControllerLayoutGuide type="bottom" id="e88-TW-ncj"/>
@@ -122,6 +122,9 @@
                                 <state key="normal" title="Get Directions">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="GetDirection:" destination="wuQ-Hd-pJO" eventType="touchUpInside" id="VXV-u4-9MF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-mJ-dKP">
                                 <rect key="frame" x="79" y="415" width="157" height="44"/>
@@ -130,11 +133,18 @@
                                 <state key="normal" title="Delete Pin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="DeletePin:" destination="wuQ-Hd-pJO" eventType="touchUpInside" id="c2e-yk-I8N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Pin" id="Xzv-9E-gPC"/>
+                    <connections>
+                        <outlet property="PinTitle" destination="sMo-V7-b1c" id="yBh-PU-jNn"/>
+                        <outlet property="Text" destination="Oqi-FG-NlD" id="U0Z-iY-aSQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mr-Ro-8La" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
