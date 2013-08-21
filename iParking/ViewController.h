@@ -10,13 +10,14 @@
 #import <MapKit/MapKit.h>
 #import "Annotation.h"
 #import "DataStoreController.h"
-
+#import <MessageUI/MessageUI.h>
 
 #define METERS_PER_MILE 1609.344
 
-@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation>{
+@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation, MFMailComposeViewControllerDelegate>{
     MKMapView *main_map;
 }
+- (IBAction)openMail:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *blabla;
 
 
