@@ -21,7 +21,6 @@
 
 
 @property (nonatomic, retain) IBOutlet MKMapView *main_map;
-@property bool has_zoomed;
 @property CLLocationCoordinate2D current_location;
 @property NSMutableArray* array;
 
