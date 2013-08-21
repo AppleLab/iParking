@@ -10,7 +10,7 @@
 
 @interface ViewControllerInf ()
 
-@end
+
 
 @implementation ViewControllerInf
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
-@interface ViewControllerInf : UITableViewController <MFMailComposeViewControllerDelegate>
+@interface ViewControllerInf : UITableViewController <MKMapViewDelegate, MKAnnotation, MFMailComposeViewControllerDelegate>
 - (IBAction)openMail:(id)sender;
 
 @end

@@ -17,7 +17,6 @@
 @interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation, MFMailComposeViewControllerDelegate>{
     MKMapView *main_map;
 }
-- (IBAction)openMail:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *blabla;
 @property (weak, nonatomic) IBOutlet UISearchBar *search;
 
