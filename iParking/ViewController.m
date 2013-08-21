@@ -19,6 +19,10 @@
 @synthesize array;
 
 - (IBAction)GetMyLocation:(id)sender {
+    [self MyLoc];
+}
+
+-(void)MyLoc{
     main_map.showsUserLocation = YES;
     [main_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 }
@@ -46,25 +50,23 @@
 
 }
 -(IBAction)dropPin:(id)sender{
-    main_map.showsUserLocation = YES;
-    [self closestPin];
-}
-
--(void) closestPin{
-
-  //  CLLocationDistance min=[CLLocationDistanceMax ];
+    Annotation *an =[self closestPin];
+          }
+//возвращает аннотацию ближайшей точки
+-(Annotation*) closestPin{
+    CLLocationDistance min= CLLocationDistanceMax;
+    Annotation* temp = [[Annotation alloc]init];
     for (int i=0; i<array.count; i++) {
-    NSLog(@"insert");
     Annotation *an= [array objectAtIndex:i];
-    NSLog(@"new annotation");
         CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:an.coordinate.latitude longitude:an.coordinate.longitude];
-    NSLog(@"pinlocation");
         CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:main_map.userLocation.coordinate.latitude longitude:main_map.userLocation.coordinate.longitude];
-    NSLog(@"mylocation");
     CLLocationDistance distance = [myLocation distanceFromLocation:pinLocation];
-    NSLog(@"distance %f",distance);
-      // distance= [an.coordinate distanceFromLocation:location];
+        if(min>distance){
+            min =distance;
+            temp=an;
     }
+    }
+    return temp;
 }
 
 
@@ -73,7 +75,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //[self GetMyLocation:nil];
     CLLocationCoordinate2D startCoord = CLLocationCoordinate2DMake(55.779215877174096, 49.129743576049805);
     MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(startCoord, 20000 , 20000)];
     [main_map setRegion:adjustedRegion animated:YES];
