@@ -142,7 +142,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Edit Pin" id="Xzv-9E-gPC"/>
                     <connections>
-                        <outlet property="PinTitle" destination="sMo-V7-b1c" id="yBh-PU-jNn"/>
+                        <outlet property="PinTitle" destination="sMo-V7-b1c" id="1Jc-Mw-5PI"/>
                         <outlet property="Text" destination="Oqi-FG-NlD" id="U0Z-iY-aSQ"/>
                     </connections>
                 </viewController>

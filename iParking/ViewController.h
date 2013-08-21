@@ -19,8 +19,6 @@
 }
 @property (weak, nonatomic) IBOutlet UIButton *blabla;
 @property (weak, nonatomic) IBOutlet UISearchBar *search;
-
-
 @property (nonatomic, retain) IBOutlet MKMapView *main_map;
 @property CLLocationCoordinate2D current_location;
 @property NSMutableArray* array;
