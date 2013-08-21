@@ -17,6 +17,7 @@
 
 @synthesize main_map;
 @synthesize array;
+
 - (IBAction)GetMyLocation:(id)sender {
     main_map.showsUserLocation = YES;
     [main_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
@@ -44,21 +45,24 @@
     [main_map addAnnotations:array];
 
 }
+-(IBAction)dropPin:(id)sender{
+    main_map.showsUserLocation = YES;
+    [self closestPin];
+}
 
 -(void) closestPin{
 
-    CLLocationDistance distance;
+  //  CLLocationDistance min=[CLLocationDistanceMax ];
     for (int i=0; i<array.count; i++) {
+    NSLog(@"insert");
     Annotation *an= [array objectAtIndex:i];
-    double lat=an.coordinate.latitude;
-    double lon=an.coordinate.longitude;
-  //  CLLocation *mylocation = [[CLLocation alloc] initWithLatitude:location.latitude longitude:location.longitude];
-    CLLocation *secondLocation = [[CLLocation alloc] initWithLatitude:lat longitude:lon];
-        
+    NSLog(@"new annotation");
         CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:an.coordinate.latitude longitude:an.coordinate.longitude];
+    NSLog(@"pinlocation");
         CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:main_map.userLocation.coordinate.latitude longitude:main_map.userLocation.coordinate.longitude];
-        
-        distance = [secondLocation distanceFromLocation:myLocation];
+    NSLog(@"mylocation");
+    CLLocationDistance distance = [myLocation distanceFromLocation:pinLocation];
+    NSLog(@"distance %f",distance);
       // distance= [an.coordinate distanceFromLocation:location];
     }
 }
