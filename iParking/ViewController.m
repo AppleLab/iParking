@@ -48,6 +48,12 @@
     [main_map addAnnotations:array];
 
 }
+
+//скрытие клавиатуры
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_search resignFirstResponder];
+}
 -(IBAction)dropPin:(id)sender{
     Annotation *an =[self closestPin];
           }
