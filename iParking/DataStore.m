@@ -500,6 +500,72 @@ static bool check=TRUE;
     annotationA44.coordinate = CLLocationCoordinate2DMake(55.803831705381604, 49.067344665527344 );
     [array addObject:annotationA44];
 
+    Annotation *annotationA45 = [Annotation new];
+    annotationA45.title = @"Платная парковка";
+    annotationA45.subtitle = @"Профсоюзная 32 (платная)";
+    annotationA45.coordinate = CLLocationCoordinate2DMake(55.79008410592093, 49.11880552768707 );
+    [array addObject:annotationA45];
+    
+    Annotation *annotationA46 = [Annotation new];
+    annotationA46.title = @"Гранд-О, ООО, автокомплекс";
+    annotationA46.subtitle = @"Островского, 22";
+    annotationA46.coordinate = CLLocationCoordinate2DMake(55.7876832815964, 49.11644518375397 );
+    [array addObject:annotationA46];
+    
+    Annotation *annotationA47 = [Annotation new];
+    annotationA47.title = @"КАРСАР, автокомплекс";
+    annotationA47.subtitle = @"Оренбургский тракт, 144а к1";
+    annotationA47.coordinate = CLLocationCoordinate2DMake(55.729137051050465, 49.19482469558716 );
+    [array addObject:annotationA47];
+    
+    Annotation *annotationA48 = [Annotation new];
+    annotationA48.title = @"ООО Ютер";
+    annotationA48.subtitle = @"Дубравная, 47в";
+    annotationA48.coordinate = CLLocationCoordinate2DMake(55.738071363626126, 49.20144438743591 );
+    [array addObject:annotationA48];
+    
+    Annotation *annotationA49 = [Annotation new];
+    annotationA49.title = @"ООО Тулпар-Сервис";
+    annotationA49.subtitle = @"Аэропорт, 5";
+    annotationA49.coordinate = CLLocationCoordinate2DMake(55.608456898910504, 49.29818093776703 );
+    [array addObject:annotationA49];
+    
+    Annotation *annotationA50 = [Annotation new];
+    annotationA50.title = @"Всероссийское общество автомобилистов";
+    annotationA50.subtitle = @"Ямашева проспект, 29в";
+    annotationA50.coordinate = CLLocationCoordinate2DMake(55.82662712190174, 49.10615086555481 );
+    [array addObject:annotationA50];
+    
+    Annotation *annotationA51 = [Annotation new];
+    annotationA51.title = @"ИП Хуснуллин А.Р.";
+    annotationA51.subtitle = @"Рустема Яхина, 4а";
+    annotationA51.coordinate = CLLocationCoordinate2DMake(55.79120604846539, 49.102492332458496 );
+    [array addObject:annotationA51];
+    
+    Annotation *annotationA52 = [Annotation new];
+    annotationA52.title = @"Автостоянка на ул. Академика Завойского, 3/1";
+    annotationA52.subtitle = @"ул. Академика Завойского 3/1";
+    annotationA52.coordinate = CLLocationCoordinate2DMake(55.75867168483579, 49.23368453979492 );
+    [array addObject:annotationA52];
+    
+    Annotation *annotationA53 = [Annotation new];
+    annotationA53.title = @"Автостоянка на проспекте Победы, 19/1";
+    annotationA53.subtitle = @"просп. Победы 19/1";
+    annotationA53.coordinate = CLLocationCoordinate2DMake(55.748676317050105, 49.20356333255768 );
+    [array addObject:annotationA53];
+    
+    Annotation *annotationA54 = [Annotation new];
+    annotationA54.title = @"Автостоянка на ул. Аделя Кутуя, 84а";
+    annotationA54.subtitle = @"Аделя Кутуя, 84а";
+    annotationA54.coordinate = CLLocationCoordinate2DMake(55.78319792819599, 49.18495953083038 );
+    [array addObject:annotationA54];
+    
+    Annotation *annotationA55 = [Annotation new];
+    annotationA55.title = @"Автостоянка на ул. Вахитова, 8а";
+    annotationA55.subtitle = @"ул. Вахитова, 8а";
+    annotationA55.coordinate = CLLocationCoordinate2DMake(55.814280131815075, 49.088072776794434 );
+    [array addObject:annotationA55];
+    
 //кал
 }
 @end
