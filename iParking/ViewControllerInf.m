@@ -1,84 +1,18 @@
-///
-//  ViewController.m
+//
+//  ViewControllerInf.m
 //  iParking
 //
-//  Created by Ramil Garaev on 12.08.13.
+//  Created by Артур Курбанов on 21.08.13.
 //  Copyright (c) 2013 Ramil Garaev. All rights reserved.
 //
 
+#import "ViewControllerInf.h"
 
-
-    
-#import "ViewController.h"
-
-    
-@implementation ViewController
-
-@synthesize main_map;
-@synthesize array;
-
-- (IBAction)GetMyLocation:(id)sender {
-    [self MyLoc];
-}
-
--(void)MyLoc{
-    main_map.showsUserLocation = YES;
-    [main_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nil bundle:nil];
-    if (self) {
-        // Initialization code here.
-    }
-    return self;
-}
+@interface ViewControllerInf ()
 
 
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    self.main_map = nil;
-}
-
-// view annoation at map
--(void) MapToAnnotation{
-    array = [DataStoreController GetArrayAnnotation];
-    [main_map addAnnotations:array];
-
-}
-
-//скрытие клавиатуры
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [_search resignFirstResponder];
-}
-
--(IBAction)dropPin:(id)sender{
-    Annotation *an =[self closestPin];
-    MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(an.coordinate, 100 , 100)];
-    [main_map setRegion:adjustedRegion animated:YES];
-    
-}
-
-
-//возвращает аннотацию ближайшей точки
--(Annotation*) closestPin{
-    CLLocationDistance min= CLLocationDistanceMax;
-    Annotation* temp = [[Annotation alloc]init];
-    for (int i=0; i<array.count; i++) {
-    Annotation *an= [array objectAtIndex:i];
-        CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:an.coordinate.latitude longitude:an.coordinate.longitude];
-        CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:main_map.userLocation.coordinate.latitude longitude:main_map.userLocation.coordinate.longitude];
-    CLLocationDistance distance = [myLocation distanceFromLocation:pinLocation];
-        if(min>distance){
-            min =distance;
-            temp=an;
-    }
-    }
-    return temp;
-}
+@implementation ViewControllerInf
 
 - (IBAction)openMail:(id)sender {
     if ([MFMailComposeViewController canSendMail])
@@ -130,19 +64,52 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    CLLocationCoordinate2D startCoord = CLLocationCoordinate2DMake(55.779215877174096, 49.129743576049805);
-    MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(startCoord, 20000 , 20000)];
-    [main_map setRegion:adjustedRegion animated:YES];
-    [self MapToAnnotation];
-    
-    //add new code
-    
-    
+
 }
 
-@end
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    return cell;
+}
+
+
+@end

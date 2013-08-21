@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F02FA2217C4C252001D60C5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F02FA2117C4C252001D60C5 /* MessageUI.framework */; };
 		C5F7B7A917B9CC5A00FB6223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7A817B9CC5A00FB6223 /* Foundation.framework */; };
 		C5F7B7AB17B9CC5A00FB6223 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7AA17B9CC5A00FB6223 /* CoreGraphics.framework */; };
 		C5F7B7AD17B9CC5A00FB6223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7B7AC17B9CC5A00FB6223 /* UIKit.framework */; };
@@ -51,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F02FA2117C4C252001D60C5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8F02FA2517C4CE4F001D60C5 /* ViewControllerInf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerInf.h; sourceTree = "<group>"; };
+		8F02FA2617C4CE4F001D60C5 /* ViewControllerInf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInf.m; sourceTree = "<group>"; };
 		C5F7B7A517B9CC5A00FB6223 /* iParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5F7B7A817B9CC5A00FB6223 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5F7B7AA17B9CC5A00FB6223 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F02FA2217C4C252001D60C5 /* MessageUI.framework in Frameworks */,
 				CEE4243017BB818A008A32C9 /* CoreLocation.framework in Frameworks */,
 				CE929A9017BB613B004B87AC /* MapKit.framework in Frameworks */,
 				C5F7B7AB17B9CC5A00FB6223 /* CoreGraphics.framework in Frameworks */,
@@ -141,6 +146,7 @@
 		C5F7B7A717B9CC5A00FB6223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F02FA2117C4C252001D60C5 /* MessageUI.framework */,
 				CEE4242F17BB818A008A32C9 /* CoreLocation.framework */,
 				CE929A8F17BB613B004B87AC /* MapKit.framework */,
 				C5F7B7A817B9CC5A00FB6223 /* Foundation.framework */,
@@ -225,6 +231,8 @@
 				C5F7B7BE17B9CC5A00FB6223 /* ViewController.m */,
 				CEBA742E17BE0673006572BB /* Annotation.h */,
 				CEBA742F17BE0673006572BB /* Annotation.m */,
+				8F02FA2517C4CE4F001D60C5 /* ViewControllerInf.h */,
+				8F02FA2617C4CE4F001D60C5 /* ViewControllerInf.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
