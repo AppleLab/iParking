@@ -54,9 +54,15 @@
 {
     [_search resignFirstResponder];
 }
+
 -(IBAction)dropPin:(id)sender{
     Annotation *an =[self closestPin];
-          }
+    MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(an.coordinate, 100 , 100)];
+    [main_map setRegion:adjustedRegion animated:YES];
+    
+}
+
+
 //возвращает аннотацию ближайшей точки
 -(Annotation*) closestPin{
     CLLocationDistance min= CLLocationDistanceMax;
