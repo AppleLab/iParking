@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="oaf-Oa-9jq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="oaf-Oa-9jq">
     <dependencies>
         <deployment version="1536" defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
     </dependencies>
     <scenes>
         <!--View Controller - KAZAN-->
@@ -53,7 +53,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dropPin:" destination="mro-Au-hVG" eventType="touchUpInside" id="84R-xp-00A"/>
+                                    <action selector="dropPin:" destination="mro-Au-hVG" eventType="touchUpInside" id="yOo-eZ-IuQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-29-Pp1">
@@ -85,6 +85,7 @@
                     <connections>
                         <outlet property="blabla" destination="usk-jS-mQJ" id="Q9z-d6-bTf"/>
                         <outlet property="main_map" destination="R1d-2G-9QG" id="aey-Es-VNC"/>
+                        <outlet property="search" destination="qgJ-E2-OpL" id="6ut-2m-mEX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfd-m3-Alf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="1143" y="-1215"/>
         </scene>
-        <!--View Controller - More-->
+        <!--View Controller Inf - More-->
         <scene sceneID="ctz-Ce-9zz">
             <objects>
-                <viewController id="Qza-Bo-Iib" sceneMemberID="viewController">
+                <viewController id="Qza-Bo-Iib" customClass="ViewControllerInf" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2wL-fS-pCy"/>
                         <viewControllerLayoutGuide type="bottom" id="3aQ-DI-H2k"/>
@@ -189,6 +190,9 @@
                                 <state key="normal" title="Information">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openMail:" destination="Qza-Bo-Iib" eventType="touchUpInside" id="Vvr-XR-iBS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
