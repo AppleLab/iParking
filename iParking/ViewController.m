@@ -16,7 +16,7 @@
 @implementation ViewController
 
 @synthesize main_map;
-
+@synthesize array;
 - (IBAction)GetMyLocation:(id)sender {
     main_map.showsUserLocation = YES;
     [main_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
@@ -40,13 +40,28 @@
 
 // view annoation at map
 -(void) MapToAnnotation{
-    NSMutableArray *array = [DataStoreController GetArrayAnnotation];
-    for (int i = 0; i<[array count]; i++) {
-        [main_map addAnnotation:[array objectAtIndex:i]];
-    }
+    array = [DataStoreController GetArrayAnnotation];
+    [main_map addAnnotations:array];
+
 }
 
-//initWithPlacemark
+-(void) closestPin{
+
+    CLLocationDistance distance;
+    for (int i=0; i<array.count; i++) {
+    Annotation *an= [array objectAtIndex:i];
+    double lat=an.coordinate.latitude;
+    double lon=an.coordinate.longitude;
+  //  CLLocation *mylocation = [[CLLocation alloc] initWithLatitude:location.latitude longitude:location.longitude];
+    CLLocation *secondLocation = [[CLLocation alloc] initWithLatitude:lat longitude:lon];
+        
+        CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:an.coordinate.latitude longitude:an.coordinate.longitude];
+        CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:main_map.userLocation.coordinate.latitude longitude:main_map.userLocation.coordinate.longitude];
+        
+        distance = [secondLocation distanceFromLocation:myLocation];
+      // distance= [an.coordinate distanceFromLocation:location];
+    }
+}
 
 
 
@@ -54,20 +69,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//      //NSDictionary *addressDict = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
-//    MKPlacemark * myPlacemark = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(55.74762259387401, 49.21452283859253) addressDictionary:nil];
-//    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:myPlacemark];
-//    mapItem.name=@"Супермаркет «Бэхетле»";
-    /*
-     NSArray* mapitems = @[point1,point2,point3];
-     [MKMapItems openMapWithItems:mapitems launchOptions:nil];
-     */
-    /*NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
-    MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
-    [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]launchOptions:launchOptions];
-     */
+    //[self GetMyLocation:nil];
+    CLLocationCoordinate2D startCoord = CLLocationCoordinate2DMake(55.779215877174096, 49.129743576049805);
+    MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(startCoord, 20000 , 20000)];
+    [main_map setRegion:adjustedRegion animated:YES];
     [self MapToAnnotation];
     
+    //add new code
     
     
 }
