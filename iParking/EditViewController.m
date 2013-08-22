@@ -50,6 +50,7 @@
     BOOL *b=[DataStoreController AddAnnotation:self.PinTitle.text andSubtitle:self.SubTitle.text andlongitude:self.coordinate];
     if (b) {
         NSLog(@"nice");
+        NSLog(@"%f,     %f",self.coordinate.latitude,self.coordinate.longitude);
     }
     else NSLog(@"BAd");
 };
