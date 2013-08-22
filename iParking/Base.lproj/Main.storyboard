@@ -180,10 +180,10 @@
             </objects>
             <point key="canvasLocation" x="1520" y="-832"/>
         </scene>
-        <!--View Controller - FeedBack-->
+        <!--View Controller Inf - FeedBack-->
         <scene sceneID="CTI-DI-JgN">
             <objects>
-                <viewController id="aNP-ny-Ew4" sceneMemberID="viewController">
+                <viewController id="aNP-ny-Ew4" customClass="ViewControllerInf" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YlC-X7-JFM"/>
                         <viewControllerLayoutGuide type="bottom" id="Wln-xg-yMJ"/>
@@ -212,6 +212,9 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="openMail:" destination="aNP-ny-Ew4" eventType="touchUpInside" id="3vk-Wp-lMT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

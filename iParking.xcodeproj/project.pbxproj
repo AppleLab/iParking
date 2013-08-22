@@ -31,6 +31,7 @@
 		CE1B1AA717BE746A00A82EC9 /* DataStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1AA617BE746900A82EC9 /* DataStoreController.m */; };
 		CE9022F117C20A4100CEB9D9 /* any_color_round_square_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9022F017C20A4100CEB9D9 /* any_color_round_square_button.png */; };
 		CE929A9017BB613B004B87AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE929A8F17BB613B004B87AC /* MapKit.framework */; };
+		CE93248617C5EF0000825BF3 /* ViewControllerInf.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F02FA2617C4CE4F001D60C5 /* ViewControllerInf.m */; };
 		CEBA743017BE0673006572BB /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA742F17BE0673006572BB /* Annotation.m */; };
 		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
 		CEE4243017BB818A008A32C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE4242F17BB818A008A32C9 /* CoreLocation.framework */; };
@@ -369,6 +370,7 @@
 				C5F7B7BF17B9CC5A00FB6223 /* ViewController.m in Sources */,
 				CEBA743017BE0673006572BB /* Annotation.m in Sources */,
 				CE1B1AA717BE746A00A82EC9 /* DataStoreController.m in Sources */,
+				CE93248617C5EF0000825BF3 /* ViewControllerInf.m in Sources */,
 				C5F7B7B917B9CC5A00FB6223 /* AppDelegate.m in Sources */,
 				CEF7B4F317C4DAB6001EDC6F /* EditViewController.m in Sources */,
 				C5F7B7E317B9D74500FB6223 /* Core.m in Sources */,
