@@ -11,6 +11,7 @@
 #import "Annotation.h"
 #import "DataStoreController.h"
 #import <MessageUI/MessageUI.h>
+#import "EditViewController.h"
 
 #define METERS_PER_MILE 1609.344
 
@@ -20,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *blabla;
 @property (weak, nonatomic) IBOutlet UISearchBar *search;
 @property (nonatomic, retain) IBOutlet MKMapView *main_map;
+@property (weak, nonatomic)  NSString *PinTitleText;
+@property (weak, nonatomic)  NSString *SubTitleText;
 @property CLLocationCoordinate2D current_location;
 @property NSMutableArray* array;
 

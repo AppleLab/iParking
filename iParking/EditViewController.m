@@ -23,10 +23,20 @@
     return self;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ViewController *transferViewController =[segue destinationViewController];
+    NSLog(@"prepareForSegue: %@", segue.identifier);
+    if([segue.identifier isEqualToString:@"GetDirection"]){
+        transferViewController.PinTitleText= self.PinTitle.text;
+        transferViewController.SubTitleText=self.SubTitle.text;
+    }
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.PinTitle.text=@"Моя точка";
+    self.SubTitle.text=@"Новая точка";
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,7 +48,7 @@
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [_PinTitle resignFirstResponder];
-    [_Text resignFirstResponder];
+    [_SubTitle resignFirstResponder];
 }
 
 

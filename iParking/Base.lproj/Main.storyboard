@@ -39,7 +39,7 @@
                                     <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wuQ-Hd-pJO" kind="push" id="jYf-0f-iH2"/>
+                                    <segue destination="wuQ-Hd-pJO" kind="push" identifier="" id="jYf-0f-iH2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8X-GP-grK">
@@ -124,6 +124,7 @@
                                 </state>
                                 <connections>
                                     <action selector="GetDirection:" destination="wuQ-Hd-pJO" eventType="touchUpInside" id="VXV-u4-9MF"/>
+                                    <segue destination="mro-Au-hVG" kind="push" identifier="GetDirection" id="7cs-4y-3XS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-mJ-dKP">
@@ -143,7 +144,7 @@
                     <navigationItem key="navigationItem" title="Edit Pin" id="Xzv-9E-gPC"/>
                     <connections>
                         <outlet property="PinTitle" destination="sMo-V7-b1c" id="1Jc-Mw-5PI"/>
-                        <outlet property="Text" destination="Oqi-FG-NlD" id="U0Z-iY-aSQ"/>
+                        <outlet property="SubTitle" destination="Oqi-FG-NlD" id="Nn6-WD-dS2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mr-Ro-8La" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVV-zD-1K2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="796" y="-509"/>
+            <point key="canvasLocation" x="649" y="-156"/>
         </scene>
         <!--View Controller - Information-->
         <scene sceneID="CTI-DI-JgN">
@@ -212,7 +213,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Wln-xg-yMJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="16x-vl-5kG">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKC-tv-ffG">
@@ -272,4 +273,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="7cs-4y-3XS"/>
+    </inferredMetricsTieBreakers>
 </document>

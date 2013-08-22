@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface EditViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *PinTitle;
-@property (weak, nonatomic) IBOutlet UITextView *Text;
+@property (weak, nonatomic) IBOutlet UITextView *SubTitle;
+
 - (IBAction)GetDirection:(id)sender;
 - (IBAction)DeletePin:(id)sender;
 
