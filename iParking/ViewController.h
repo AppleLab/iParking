@@ -10,19 +10,18 @@
 #import <MapKit/MapKit.h>
 #import "Annotation.h"
 #import "DataStoreController.h"
-
+#import <MessageUI/MessageUI.h>
 
 #define METERS_PER_MILE 1609.344
 
-@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation>{
+@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation, MFMailComposeViewControllerDelegate>{
     MKMapView *main_map;
 }
 @property (weak, nonatomic) IBOutlet UIButton *blabla;
-
-
-//@property (nonatomic, retain) IBOutlet MKMapView *main_map;
-@property bool has_zoomed;
+@property (weak, nonatomic) IBOutlet UISearchBar *search;
+@property (nonatomic, retain) IBOutlet MKMapView *main_map;
 @property CLLocationCoordinate2D current_location;
+@property NSMutableArray* array;
 
 -(IBAction)showInfo:(id)sender;
 -(IBAction)dropPin:(id)sender;

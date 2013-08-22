@@ -1,4 +1,4 @@
-//
+///
 //  ViewController.m
 //  iParking
 //
@@ -8,16 +8,20 @@
 
 
 
-
     
 #import "ViewController.h"
 
     
 @implementation ViewController
 
-//@synthesize main_map;
+@synthesize main_map;
+@synthesize array;
 
 - (IBAction)GetMyLocation:(id)sender {
+    [self MyLoc];
+}
+
+-(void)MyLoc{
     main_map.showsUserLocation = YES;
     [main_map setUserTrackingMode:MKUserTrackingModeFollow animated:YES];
 }
@@ -35,91 +39,110 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-   // self.main_map = nil;
+    self.main_map = nil;
 }
 
 // view annoation at map
 -(void) MapToAnnotation{
-    NSMutableArray *array = [DataStoreController GetArrayAnnotation];
-    for (int i = 0; i<[array count]; i++) {
-        [main_map addAnnotation:[array objectAtIndex:i]];
+    array = [DataStoreController GetArrayAnnotation];
+    [main_map addAnnotations:array];
+
+}
+
+//скрытие клавиатуры
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_search resignFirstResponder];
+}
+
+-(IBAction)dropPin:(id)sender{
+    Annotation *an =[self closestPin];
+    MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(an.coordinate, 100 , 100)];
+    [main_map setRegion:adjustedRegion animated:YES];
+    
+}
+
+
+//возвращает аннотацию ближайшей точки
+-(Annotation*) closestPin{
+    CLLocationDistance min= CLLocationDistanceMax;
+    Annotation* temp = [[Annotation alloc]init];
+    for (int i=0; i<array.count; i++) {
+    Annotation *an= [array objectAtIndex:i];
+        CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:an.coordinate.latitude longitude:an.coordinate.longitude];
+        CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:main_map.userLocation.coordinate.latitude longitude:main_map.userLocation.coordinate.longitude];
+    CLLocationDistance distance = [myLocation distanceFromLocation:pinLocation];
+        if(min>distance){
+            min =distance;
+            temp=an;
+    }
+    }
+    return temp;
+}
+
+- (IBAction)openMail:(id)sender {
+    if ([MFMailComposeViewController canSendMail])
+    {
+        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+        mailer.mailComposeDelegate = self;
+        [mailer setSubject:@"A Message from MobileTuts+"];
+        NSArray *toRecipients = [NSArray arrayWithObjects:@"fisrtMail@example.com", @"secondMail@example.com", nil];
+        [mailer setToRecipients:toRecipients];
+        UIImage *myImage = [UIImage imageNamed:@"mobiletuts-logo.png"];
+        NSData *imageData = UIImagePNGRepresentation(myImage);
+        [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"mobiletutsImage"];
+        NSString *emailBody = @"Have you seen the MobileTuts+ web site?";
+        [mailer setMessageBody:emailBody isHTML:NO];
+        [self presentModalViewController:mailer animated:YES];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
+                                                        message:@"Your device doesn't support the composer sheet"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
 }
 
-//initWithPlacemark
--(void) simplecode{
-    
-    MKPlacemark*myPlacemark =[[MKPlacemark alloc] initWithCoordinate:CLLocationCoordinate2DMake(53.90,27.56) addressDictionary:nil];
-    MKMapItem*myPoint =[[MKMapItem alloc] initWithPlacemark:myPlacemark];
-  [myPoint openInMapsWithLaunchOptions:nil];
-//    Annotation *an = [Annotation alloc] initWithCoordine
-//    an.title = @"sdfgsgdsg";
- //   CLLocation *cloc = [[CLLocation alloc]init];
- //   MKMapItem * mk = [an mapItem];
-    
-    
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued.");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved: you saved the email message in the drafts folder.");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail send: the email message is queued in the outbox. It is ready to send.");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail failed: the email message was not saved or queued, possibly due to an error.");
+            break;
+        default:
+            NSLog(@"Mail not sent.");
+            break;
+    }
+    // Remove the mail view
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 
--(void) workTest{
-    MKMapItem *mapItem = [[MKMapItem alloc] init];
-    //[mapItem setName:geocodedPlacemark.name];
-    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
-    MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
-    [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]
-                   launchOptions:launchOptions];
-    
-    
-    // [self.annotation.mapItem openInMapsWithLaunchOptions:launchOptions];
-}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self workTest];
-
-
-//    [self MapToAnnotation];
+    CLLocationCoordinate2D startCoord = CLLocationCoordinate2DMake(55.779215877174096, 49.129743576049805);
+    MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(startCoord, 20000 , 20000)];
+    [main_map setRegion:adjustedRegion animated:YES];
+       main_map.showsUserLocation = YES;
+    [self MapToAnnotation];
+    
+    //add new code
     
     
-   /* mkMapView = [[MKMapView alloc]initWithFrame: self.view.bounds];
-    [self.view addSubview:mkMapView];
-    */
-    
-    
-}
-
-- (void)changeMapType:(UISegmentedControl*)sender {
-    if (sender.selectedSegmentIndex == 0) {
-        main_map.mapType = MKMapTypeStandard;
-    } else if (sender.selectedSegmentIndex == 1) {
-        main_map.mapType = MKMapTypeSatellite;
-    } else if (sender.selectedSegmentIndex == 2) {
-        main_map.mapType = MKMapTypeHybrid;
-    }
-}
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
-{
-    if (annotation == mapView.userLocation) {
-        return nil;
-    }
-    
-    static NSString* annotationIdentifier = @"annotationIdentifier";
-    MKPinAnnotationView* annotationView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
-    
-    if (!annotationView) {
-        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
-                                                         reuseIdentifier:nil];
-        if([[annotation title] isEqualToString:@"Annotation1"]) {
-            [annotationView setPinColor:MKPinAnnotationColorRed];
-        } else {
-            [annotationView setPinColor:MKPinAnnotationColorGreen];
-            annotationView.animatesDrop = YES;
-            annotationView.canShowCallout = YES;
-        }
-    }
-    
-    return annotationView;
 }
 
 @end
