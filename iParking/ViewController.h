@@ -21,8 +21,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *blabla;
 @property (weak, nonatomic) IBOutlet UISearchBar *search;
 @property (nonatomic, retain) IBOutlet MKMapView *main_map;
-@property (weak, nonatomic)  NSString *PinTitleText;
-@property (weak, nonatomic)  NSString *SubTitleText;
 @property CLLocationCoordinate2D current_location;
 @property NSMutableArray* array;
 

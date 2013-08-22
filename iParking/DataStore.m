@@ -17,10 +17,16 @@ static bool check=TRUE;
 //rewrite
 +(BOOL) AddAnnotation:(Annotation*)annotation{
     //добваление тольво вот куда? если у нас нет не базы данных и тому подобное
-    if (check) {
-        [DataStore Start];
+    @try {
+         [array addObject:annotation];
+        return true;
     }
-    return false;
+    @catch (NSException *exception) {
+        return false;
+    }
+   
+   
+
 }
 //complite
 +(Annotation*) GetAnnotation:(int)count{

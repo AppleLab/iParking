@@ -130,6 +130,19 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    EditViewController *transferViewController = [segue destinationViewController];
+    
+    NSLog(@"prepareForSegue: %@", segue.identifier);
+    if([segue.identifier isEqualToString:@"add"])
+    {
+        
+        transferViewController.coordinate=main_map.userLocation.coordinate;
+        
+    }
+    
+}
 
 - (void)viewDidLoad
 {

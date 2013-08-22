@@ -23,14 +23,7 @@
     return self;
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    ViewController *transferViewController =[segue destinationViewController];
-    NSLog(@"prepareForSegue: %@", segue.identifier);
-    if([segue.identifier isEqualToString:@"GetDirection"]){
-        transferViewController.PinTitleText= self.PinTitle.text;
-        transferViewController.SubTitleText=self.SubTitle.text;
-    }
-}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -53,7 +46,13 @@
 
 
 - (IBAction)GetDirection:(id)sender {
-}
+
+    BOOL *b=[DataStoreController AddAnnotation:self.PinTitle.text andSubtitle:self.SubTitle.text andlongitude:self.coordinate];
+    if (b) {
+        NSLog(@"nice");
+    }
+    else NSLog(@"BAd");
+};
 
 - (IBAction)DeletePin:(id)sender {
 }

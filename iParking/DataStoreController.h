@@ -10,9 +10,11 @@
 #import "Annotation.h"
 #import "DataStore.h"
 
+
 @interface DataStoreController : NSObject{
 }
 +(BOOL) AddAnnotation:(NSString*)title andSubtitle: (NSString*)subtitle andlongitude: (double)longitude andlatitude: (double)latitude;
++(BOOL) AddAnnotation:(NSString*)title andSubtitle: (NSString*)subtitle andlongitude:(CLLocationCoordinate2D) coordinat;
 +(Annotation*) GetAnnotation:(int)count;
 +(NSMutableArray*) GetArrayAnnotation;
 

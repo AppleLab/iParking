@@ -26,6 +26,23 @@
         return FALSE;
     }
 }
++(BOOL) AddAnnotation:(NSString*)title andSubtitle: (NSString*)subtitle andlongitude:(CLLocationCoordinate2D) coordinat {
+    @try {
+        Annotation *annotation = [Annotation new];
+        annotation.title = title;
+        annotation.subtitle = subtitle;
+        annotation.coordinate = coordinat;
+        NSLog(annotation.title);
+        if ([DataStore AddAnnotation:annotation]) {
+            return true;
+        }else
+            return FALSE;
+        
+    }
+    @catch (NSException *exception) {
+        return FALSE;
+    }
+}
 
 +(Annotation*) GetAnnotation:(int) count{
     return [DataStore GetAnnotation: count];
