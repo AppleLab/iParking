@@ -34,6 +34,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//скрытие клавиатуры
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_PinTitle resignFirstResponder];
+    [_Text resignFirstResponder];
+}
+
 
 - (IBAction)GetDirection:(id)sender {
 }
