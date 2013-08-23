@@ -53,5 +53,6 @@
 };
 
 - (IBAction)DeletePin:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
