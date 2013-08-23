@@ -26,20 +26,12 @@
 		CE0D250617BE4C14003D1950 /* red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250517BE4C14003D1950 /* red-square-button-md.png */; };
 		CE0D250817BE4C1A003D1950 /* Копия red-square-button-md.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250717BE4C1A003D1950 /* Копия red-square-button-md.png */; };
 		CE0D250A17BE4CF7003D1950 /* iParkinh_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250917BE4CF7003D1950 /* iParkinh_640x960.png */; };
-		CE0D250C17BE4D5F003D1950 /* IPhone_free_desktop_(retina).png in Resources */ = {isa = PBXBuildFile; fileRef = CE0D250B17BE4D5F003D1950 /* IPhone_free_desktop_(retina).png */; };
 		CE1B1AA417BE744C00A82EC9 /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1AA317BE744C00A82EC9 /* DataStore.m */; };
 		CE1B1AA717BE746A00A82EC9 /* DataStoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B1AA617BE746900A82EC9 /* DataStoreController.m */; };
-		CE9022F117C20A4100CEB9D9 /* any_color_round_square_button.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9022F017C20A4100CEB9D9 /* any_color_round_square_button.png */; };
 		CE929A9017BB613B004B87AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE929A8F17BB613B004B87AC /* MapKit.framework */; };
 		CE93248617C5EF0000825BF3 /* ViewControllerInf.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F02FA2617C4CE4F001D60C5 /* ViewControllerInf.m */; };
 		CEBA743017BE0673006572BB /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBA742F17BE0673006572BB /* Annotation.m */; };
-		CEBD06D817BA506500E22A12 /* image.gif in Resources */ = {isa = PBXBuildFile; fileRef = CEBD06D717BA506500E22A12 /* image.gif */; };
 		CEE4243017BB818A008A32C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE4242F17BB818A008A32C9 /* CoreLocation.framework */; };
-		CEEAC4FA17BB9C1700B8E5E1 /* img2012032210034175.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */; };
-		CEEAC4FC17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */; };
-		CEEAC4FE17BB9C2A00B8E5E1 /* kazan-0045.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */; };
-		CEF746F817BCDDB800943206 /* 13254411332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF746F717BCDDB800943206 /* 13254411332.jpg */; };
-		CEF746FA17BCDF2A00943206 /* 440173519_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEF746F917BCDF2A00943206 /* 440173519_640.jpg */; };
 		CEF7B4F317C4DAB6001EDC6F /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF7B4F217C4DAB6001EDC6F /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -81,22 +73,14 @@
 		CE0D250517BE4C14003D1950 /* red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-square-button-md.png"; sourceTree = SOURCE_ROOT; };
 		CE0D250717BE4C1A003D1950 /* Копия red-square-button-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Копия red-square-button-md.png"; sourceTree = SOURCE_ROOT; };
 		CE0D250917BE4CF7003D1950 /* iParkinh_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iParkinh_640x960.png; sourceTree = SOURCE_ROOT; };
-		CE0D250B17BE4D5F003D1950 /* IPhone_free_desktop_(retina).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IPhone_free_desktop_(retina).png"; sourceTree = SOURCE_ROOT; };
 		CE1B1AA217BE744C00A82EC9 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
 		CE1B1AA317BE744C00A82EC9 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		CE1B1AA517BE746900A82EC9 /* DataStoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStoreController.h; sourceTree = "<group>"; };
 		CE1B1AA617BE746900A82EC9 /* DataStoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreController.m; sourceTree = "<group>"; };
-		CE9022F017C20A4100CEB9D9 /* any_color_round_square_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = any_color_round_square_button.png; sourceTree = SOURCE_ROOT; };
 		CE929A8F17BB613B004B87AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEBA742E17BE0673006572BB /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		CEBA742F17BE0673006572BB /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
-		CEBD06D717BA506500E22A12 /* image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image.gif; sourceTree = SOURCE_ROOT; };
 		CEE4242F17BB818A008A32C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2012032210034175.jpg; sourceTree = SOURCE_ROOT; };
-		CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JwSvJ_croper_ru.jpeg; sourceTree = SOURCE_ROOT; };
-		CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kazan-0045.jpeg"; sourceTree = SOURCE_ROOT; };
-		CEF746F717BCDDB800943206 /* 13254411332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13254411332.jpg; sourceTree = SOURCE_ROOT; };
-		CEF746F917BCDF2A00943206 /* 440173519_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 440173519_640.jpg; sourceTree = SOURCE_ROOT; };
 		CEF7B4F117C4DAB6001EDC6F /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		CEF7B4F217C4DAB6001EDC6F /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,18 +164,10 @@
 				C5F7B7B817B9CC5A00FB6223 /* AppDelegate.m */,
 				C5F7B7C017B9CC5A00FB6223 /* Images.xcassets */,
 				C5F7B7B017B9CC5A00FB6223 /* iParking-Info.plist */,
-				CEBD06D717BA506500E22A12 /* image.gif */,
 				C5F7B7B117B9CC5A00FB6223 /* InfoPlist.strings */,
-				CEEAC4F917BB9C1700B8E5E1 /* img2012032210034175.jpg */,
-				CEEAC4FB17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg */,
-				CEEAC4FD17BB9C2A00B8E5E1 /* kazan-0045.jpeg */,
-				CE9022F017C20A4100CEB9D9 /* any_color_round_square_button.png */,
 				CE0D250717BE4C1A003D1950 /* Копия red-square-button-md.png */,
-				CE0D250B17BE4D5F003D1950 /* IPhone_free_desktop_(retina).png */,
 				CE0D250917BE4CF7003D1950 /* iParkinh_640x960.png */,
 				CE0D250517BE4C14003D1950 /* red-square-button-md.png */,
-				CEF746F717BCDDB800943206 /* 13254411332.jpg */,
-				CEF746F917BCDF2A00943206 /* 440173519_640.jpg */,
 				C5F7B7B417B9CC5A00FB6223 /* main.m */,
 				C5F7B7B617B9CC5A00FB6223 /* iParking-Prefix.pch */,
 			);
@@ -335,19 +311,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEAC4FE17BB9C2A00B8E5E1 /* kazan-0045.jpeg in Resources */,
-				CEBD06D817BA506500E22A12 /* image.gif in Resources */,
-				CEEAC4FC17BB9C2600B8E5E1 /* JwSvJ_croper_ru.jpeg in Resources */,
-				CEF746FA17BCDF2A00943206 /* 440173519_640.jpg in Resources */,
 				CE0D250617BE4C14003D1950 /* red-square-button-md.png in Resources */,
-				CEF746F817BCDDB800943206 /* 13254411332.jpg in Resources */,
 				C5F7B7C117B9CC5A00FB6223 /* Images.xcassets in Resources */,
 				C5F7B7B317B9CC5A00FB6223 /* InfoPlist.strings in Resources */,
-				CEEAC4FA17BB9C1700B8E5E1 /* img2012032210034175.jpg in Resources */,
 				CE0D250A17BE4CF7003D1950 /* iParkinh_640x960.png in Resources */,
-				CE9022F117C20A4100CEB9D9 /* any_color_round_square_button.png in Resources */,
 				C5F7B7BC17B9CC5A00FB6223 /* Main.storyboard in Resources */,
-				CE0D250C17BE4D5F003D1950 /* IPhone_free_desktop_(retina).png in Resources */,
 				CE0D250817BE4C1A003D1950 /* Копия red-square-button-md.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
