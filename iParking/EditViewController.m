@@ -52,7 +52,5 @@
     [delegate createPinWithTitle:PinTitle.text andWithSubtitle:SubTitle.text];
 };
 
-- (IBAction)DeletePin:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 @end

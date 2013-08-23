@@ -109,25 +109,14 @@
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nq-R9-7ME">
-                                <rect key="frame" x="82" y="321" width="157" height="44"/>
+                                <rect key="frame" x="82" y="379" width="157" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Get Directions">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="GetDirection:" destination="wuQ-Hd-pJO" eventType="touchUpInside" id="VXV-u4-9MF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-mJ-dKP">
-                                <rect key="frame" x="82" y="388" width="157" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Cansel">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="DeletePin:" destination="wuQ-Hd-pJO" eventType="touchUpInside" id="c2e-yk-I8N"/>
+                                    <action selector="GetDirection:" destination="wuQ-Hd-pJO" eventType="touchUpInside" id="y3x-q0-zHh"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sV-T1-oPl">
@@ -143,7 +132,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Edit Pin" id="Xzv-9E-gPC"/>
                     <connections>
-                        <outlet property="PinTitle" destination="sMo-V7-b1c" id="1Jc-Mw-5PI"/>
+                        <outlet property="PinTitle" destination="sMo-V7-b1c" id="pDA-8h-cE1"/>
+                        <outlet property="SubTitle" destination="5sV-T1-oPl" id="Mbx-aj-tBT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mr-Ro-8La" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -22,7 +22,7 @@
 
 
 - (IBAction)GetDirection:(id)sender;
-- (IBAction)DeletePin:(id)sender;
+
 @property id<ADCDelegate> delegate;
 
 @end
