@@ -62,6 +62,9 @@
     
 }
 
+- (IBAction)addTitle:(id)sender {
+}
+
 
 //возвращает аннотацию ближайшей точки
 -(Annotation*) closestPin{
@@ -130,18 +133,23 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
-    EditViewController *transferViewController = [segue destinationViewController];
-    
-    NSLog(@"prepareForSegue: %@", segue.identifier);
-    if([segue.identifier isEqualToString:@"add"])
-    {
-        
-        transferViewController.coordinate=main_map.userLocation.coordinate;
-        
+
+    if ([segue.identifier isEqualToString:@"addTitle"]){
+        EditViewController *addDisc = (EditViewController*)segue.destinationViewController;
+        addDisc.delegate = self;
     }
+}
+- (void)createPinWithTitle:(NSString *)pinTitle andWithSubtitle: (NSString *)pinSubtitle{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    // to-do: create pin object with characteristics..
+    Annotation *point = [[Annotation alloc] init];
+    point.coordinate = main_map.userLocation.coordinate;
+    point.title = pinTitle;
+    point.subtitle = pinSubtitle;
     
+    [self.main_map addAnnotation:point];
 }
 
 - (void)viewDidLoad

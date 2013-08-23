@@ -13,6 +13,9 @@
 @end
 
 @implementation EditViewController
+@synthesize delegate;
+@synthesize PinTitle;
+@synthesize SubTitle;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,19 +43,13 @@
 //скрытие клавиатуры
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [_PinTitle resignFirstResponder];
-    [_SubTitle resignFirstResponder];
+    [PinTitle resignFirstResponder];
+    [SubTitle resignFirstResponder];
 }
 
 
 - (IBAction)GetDirection:(id)sender {
-
-    BOOL *b=[DataStoreController AddAnnotation:self.PinTitle.text andSubtitle:self.SubTitle.text andlongitude:self.coordinate];
-    if (b) {
-        NSLog(@"nice");
-        NSLog(@"%f,     %f",self.coordinate.latitude,self.coordinate.longitude);
-    }
-    else NSLog(@"BAd");
+    [delegate createPinWithTitle:PinTitle.text andWithSubtitle:SubTitle.text];
 };
 
 - (IBAction)DeletePin:(id)sender {

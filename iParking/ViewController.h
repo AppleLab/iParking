@@ -15,7 +15,7 @@
 
 #define METERS_PER_MILE 1609.344
 
-@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation, MFMailComposeViewControllerDelegate>{
+@interface ViewController : UIViewController <MKMapViewDelegate, MKAnnotation, MFMailComposeViewControllerDelegate,ADCDelegate>{
     MKMapView *main_map;
 }
 @property (weak, nonatomic) IBOutlet UIButton *blabla;
@@ -24,8 +24,9 @@
 @property CLLocationCoordinate2D current_location;
 @property NSMutableArray* array;
 
--(IBAction)showInfo:(id)sender;
+
 -(IBAction)dropPin:(id)sender;
+- (IBAction)addTitle:(id)sender;
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context;
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control;

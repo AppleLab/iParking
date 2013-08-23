@@ -39,7 +39,8 @@
                                     <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wuQ-Hd-pJO" kind="push" identifier="add" id="jYf-0f-iH2"/>
+                                    <action selector="addTitle:" destination="mro-Au-hVG" eventType="touchUpInside" id="8eS-LI-TPA"/>
+                                    <segue destination="wuQ-Hd-pJO" kind="modal" identifier="addTitle" id="Zn5-rN-2WY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8X-GP-grK">
@@ -98,7 +99,7 @@
                         <viewControllerLayoutGuide type="bottom" id="e88-TW-ncj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Lfe-i7-uZY">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqi-FG-NlD">
