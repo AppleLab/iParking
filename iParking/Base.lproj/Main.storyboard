@@ -40,7 +40,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addTitle:" destination="mro-Au-hVG" eventType="touchUpInside" id="8eS-LI-TPA"/>
-                                    <segue destination="wuQ-Hd-pJO" kind="modal" identifier="addTitle" id="Zn5-rN-2WY"/>
+                                    <segue destination="wuQ-Hd-pJO" kind="push" identifier="addTitle" id="Zn5-rN-2WY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8X-GP-grK">
@@ -99,17 +99,9 @@
                         <viewControllerLayoutGuide type="bottom" id="e88-TW-ncj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Lfe-i7-uZY">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqi-FG-NlD">
-                                <rect key="frame" x="37" y="150" width="240" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pin Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMo-V7-b1c">
                                 <rect key="frame" x="20" y="84" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -117,7 +109,7 @@
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nq-R9-7ME">
-                                <rect key="frame" x="79" y="354" width="157" height="44"/>
+                                <rect key="frame" x="79" y="188" width="157" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Get Directions">
@@ -128,7 +120,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-mJ-dKP">
-                                <rect key="frame" x="79" y="415" width="157" height="44"/>
+                                <rect key="frame" x="79" y="303" width="157" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Delete Pin">
@@ -139,12 +131,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.87058830261230469" green="0.92156869173049927" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Pin" id="Xzv-9E-gPC"/>
                     <connections>
                         <outlet property="PinTitle" destination="sMo-V7-b1c" id="1Jc-Mw-5PI"/>
-                        <outlet property="SubTitle" destination="Oqi-FG-NlD" id="Nn6-WD-dS2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mr-Ro-8La" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -167,15 +158,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90588241815567017" green="0.97254908084869385" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
-                                <string key="text">Новое приложение iParking решит все Ваши проблемы с парковкой.
-Онлайн карта города Казань, с возможностью выбора парковки и прокладки маршрута до нее.
-Возможности:
-- Определение вашего местоположения с помощью GPS
-- Поиск ближайших парковок
-- Информация о парковке (платная/бесплатная, режим работы)
-- Функция следования до места парковки
-- Выбор альтернативных вариантов парковки
-Версия: 1.0.0</string>
+                                <mutableString key="text">Приложение iParking позволит Вам решить проблемы с парковкой.
+Данная программа оснащена картой г.Казань, на которой обозначены разрешенные места для парковки. Благодаря проекту iParking ваш автомобиль  никогда не окажется на штраф стоянке. 
+Приложение iParking это:
+-Удобный интерфейс 
+-Быстрая и плавная работа приложения 
+-Определение вашего местоположения с помощь GPS
+-Поиск ближайшей парковки
+-Предоставление информации о парковке 
+-Возможность добавления необходимых парковок в "Избранное"
+Свои пожелания и комментарии Вы можете отправлять разработчикам, это позволить улучшить работу приложения и сделать его максимально комфортным для каждого пользователя.
+Версия 1.0.0</mutableString>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
