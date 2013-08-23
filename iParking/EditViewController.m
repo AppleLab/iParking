@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// Do any additional setup after loading the view. 
     self.PinTitle.text=@"Моя точка";
     self.SubTitle.text=@"Новая точка";
 }
