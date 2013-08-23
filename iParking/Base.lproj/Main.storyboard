@@ -158,7 +158,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90588241815567017" green="0.97254908084869385" blue="0.97254908084869385" alpha="1" colorSpace="deviceRGB"/>
-                                <mutableString key="text">Приложение iParking позволит Вам решить проблемы с парковкой.
+                                <string key="text">Приложение iParking позволит Вам решить проблемы с парковкой.
 Данная программа оснащена картой г.Казань, на которой обозначены разрешенные места для парковки. Благодаря проекту iParking ваш автомобиль  никогда не окажется на штраф стоянке. 
 Приложение iParking это:
 -Удобный интерфейс 
@@ -168,7 +168,7 @@
 -Предоставление информации о парковке 
 -Возможность добавления необходимых парковок в "Избранное"
 Свои пожелания и комментарии Вы можете отправлять разработчикам, это позволить улучшить работу приложения и сделать его максимально комфортным для каждого пользователя.
-Версия 1.0.0</mutableString>
+Версия 1.0.0</string>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
