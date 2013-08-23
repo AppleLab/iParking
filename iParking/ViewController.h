@@ -23,8 +23,9 @@
 @property (nonatomic, retain) IBOutlet MKMapView *main_map;
 @property CLLocationCoordinate2D current_location;
 @property NSMutableArray* array;
+@property NSMutableArray * arrayForCheck;
 
-
+-(BOOL) check:(Annotation*)annnotation;
 -(IBAction)dropPin:(id)sender;
 - (IBAction)addTitle:(id)sender;
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context;

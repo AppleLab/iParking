@@ -78,6 +78,7 @@
 		CE1B1AA517BE746900A82EC9 /* DataStoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStoreController.h; sourceTree = "<group>"; };
 		CE1B1AA617BE746900A82EC9 /* DataStoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStoreController.m; sourceTree = "<group>"; };
 		CE929A8F17BB613B004B87AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE9CE9AE17C7554C00340243 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		CEBA742E17BE0673006572BB /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		CEBA742F17BE0673006572BB /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		CEE4242F17BB818A008A32C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -115,6 +116,7 @@
 		C5F7B79C17B9CC5A00FB6223 = {
 			isa = PBXGroup;
 			children = (
+				CE9CE9AD17C7554C00340243 /* Model.xcdatamodeld */,
 				C5F7B7AE17B9CC5A00FB6223 /* iParking */,
 				C5F7B7CD17B9CC5A00FB6223 /* iParkingTests */,
 				C5F7B7A717B9CC5A00FB6223 /* Frameworks */,
@@ -560,6 +562,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE9CE9AD17C7554C00340243 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE9CE9AE17C7554C00340243 /* Model.xcdatamodel */,
+			);
+			currentVersion = CE9CE9AE17C7554C00340243 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C5F7B79D17B9CC5A00FB6223 /* Project object */;
 }

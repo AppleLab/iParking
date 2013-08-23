@@ -16,9 +16,11 @@
 
 @synthesize main_map;
 @synthesize array;
+@synthesize arrayForCheck;
 
 - (IBAction)GetMyLocation:(id)sender {
     [self MyLoc];
+    arrayForCheck=[[NSMutableArray alloc]init];
 }
 
 -(void)MyLoc{
@@ -57,8 +59,13 @@
 
 -(IBAction)dropPin:(id)sender{
     Annotation *an =[self closestPin];
-    MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(an.coordinate, 100 , 100)];
+    if (an!=nil) {
+        MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(an.coordinate, 100 , 100)];
+        [main_map setRegion:adjustedRegion animated:YES];
+    }else{
+    MKCoordinateRegion adjustedRegion = [main_map regionThatFits:MKCoordinateRegionMakeWithDistance(main_map.userLocation.coordinate, 100 , 100)];
     [main_map setRegion:adjustedRegion animated:YES];
+    }
     
 }
 
@@ -68,18 +75,23 @@
 
 //возвращает аннотацию ближайшей точки
 -(Annotation*) closestPin{
+    
     CLLocationDistance min= CLLocationDistanceMax;
     Annotation* temp = [[Annotation alloc]init];
+    NSLog(@" %d",arrayForCheck.count);
     for (int i=0; i<array.count; i++) {
-    Annotation *an= [array objectAtIndex:i];
+        Annotation *an= [array objectAtIndex:i];
         CLLocation *pinLocation = [[CLLocation alloc] initWithLatitude:an.coordinate.latitude longitude:an.coordinate.longitude];
         CLLocation *myLocation = [[CLLocation alloc] initWithLatitude:main_map.userLocation.coordinate.latitude longitude:main_map.userLocation.coordinate.longitude];
-    CLLocationDistance distance = [myLocation distanceFromLocation:pinLocation];
-        if(min>distance){
-            min =distance;
-            temp=an;
+        CLLocationDistance distance = [myLocation distanceFromLocation:pinLocation];
+        if (![arrayForCheck containsObject:an]){
+           if(min>distance){
+               min =distance;
+               temp=an;
+                }
+        }
     }
-    }
+    [arrayForCheck addObject:temp];
     return temp;
 }
 
@@ -160,6 +172,7 @@
     [main_map setRegion:adjustedRegion animated:YES];
        main_map.showsUserLocation = YES;
     [self MapToAnnotation];
+    arrayForCheck = [[NSMutableArray alloc]init];
     
     //add new code
     
