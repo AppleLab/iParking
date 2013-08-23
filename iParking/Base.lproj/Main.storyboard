@@ -168,7 +168,7 @@
 Свои пожелания и комментарии Вы можете отправлять разработчикам, это позволить улучшить работу приложения и сделать его максимально комфортным для каждого пользователя.
 Версия 1.0.0</string>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
